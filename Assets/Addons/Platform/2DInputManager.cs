@@ -53,28 +53,14 @@ public class InputManager : MonoBehaviour
         #endregion
 
         #region 能力选择
-        if (_chooseAction.WasPressedThisFrame())
-        {
-            Key key = _chooseAction.ReadValue<Key>();
-
-            switch (key)
-            {
-                case Key.Digit1:
-                    selectedIndex = 0;
-                    break;
-                case Key.Digit2:
-                    selectedIndex = 1;
-                    break;
-                case Key.Digit3:
-                    selectedIndex = 2;
-                    break;
-            }
-        }
-
-        if (selectedIndex >= 0 && selectedIndex < Ability.mLevelSettings.可用能力列表.Count)
-        {
-            Ability.选中能力 = selectedIndex;
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) { selectedIndex = 0; }
+        if (Input.GetKeyDown(KeyCode.Alpha2)) { selectedIndex = 1; }
+        if (Input.GetKeyDown(KeyCode.Alpha3)) { selectedIndex = 2; }
+        if (Input.GetKeyDown(KeyCode.Alpha4)) { selectedIndex = 3; }
+        if (Input.GetKeyDown(KeyCode.Alpha5)) { selectedIndex = 4; }
+        if (Input.GetKeyDown(KeyCode.Alpha6)) { selectedIndex = 5; }
+        if (Input.GetKeyDown(KeyCode.Alpha7)) { selectedIndex = 6; }
+        if (Input.GetKeyDown(KeyCode.Alpha8)) { selectedIndex = 7; }
     }
 
     #endregion
