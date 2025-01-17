@@ -18,4 +18,5 @@ public class AblilityBase : MonoBehaviour
         { 1, "╧л╤╗ещещ" },
         { 2, "адлЛещещ" }
     };
+
 }
