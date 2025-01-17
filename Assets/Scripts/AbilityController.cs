@@ -6,7 +6,7 @@ public class AbilityController : ViewController
     public LevelSettings mLevelSettings;
 
     public int 剩余可用能力次数;
-    public string 选中能力;
+    public int 选中能力; // index of 可用能力列表
 
     public void Awake()
     {
@@ -23,7 +23,7 @@ public class AbilityController : ViewController
             可用能力 += " " + AblilityBase.能力表[num];
         }
         GUILayout.Label("可用能力 " + 可用能力);
-        GUILayout.Label("选中能力 " + 选中能力);
+        GUILayout.Label("选中能力 " + AblilityBase.能力表[选中能力]);
         GUILayout.Label("总可用能力次数:" + mLevelSettings.总可用能力次数);
     }
     public void Update()
