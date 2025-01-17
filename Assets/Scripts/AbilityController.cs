@@ -6,7 +6,7 @@ public class AbilityController : ViewController
     public LevelSettings mLevelSettings;
 
     public int 剩余可用能力次数;
-    public string 选中能力;
+    public int 选中能力;
 
     public void Awake()
     {
