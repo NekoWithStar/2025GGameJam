@@ -43,7 +43,8 @@ public class BubbleFixed : MonoBehaviour
         if (collision.gameObject.CompareTag("Spike"))
         {
             Bomb();
-        }else if (!collision.gameObject.CompareTag("Player"))
+        }
+        else if (!collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Åö×²");
             Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();

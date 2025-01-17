@@ -517,6 +517,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2387580988409794455, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102293178755929279, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348017318518638897, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5260732139740126489, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: BubbleFixed
       value: 

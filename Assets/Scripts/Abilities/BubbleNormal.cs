@@ -4,6 +4,8 @@ public class BubbleNormal : MonoBehaviour
 {
     public float 上升速度 = 1f;
     public Rigidbody2D rb;
+    public float lifeTime = 5f;
+    private float leftTime;
 
 
     private bool bomb = false;
@@ -15,6 +17,7 @@ public class BubbleNormal : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        leftTime = lifeTime;
     }
    
     private void FixedUpdate()
@@ -23,6 +26,18 @@ public class BubbleNormal : MonoBehaviour
         {
             // 每秒上升
             rb.velocity = new Vector2(0, 上升速度);
+        }
+    }
+
+    private void Update()
+    {
+        if (!bomb)
+        {
+            leftTime -= Time.deltaTime;
+            if (leftTime <= 0)
+            {
+                Bomb();
+            }
         }
     }
 
