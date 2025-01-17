@@ -38,7 +38,7 @@ namespace QFramework.Example
             });
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (canMove)
             {
