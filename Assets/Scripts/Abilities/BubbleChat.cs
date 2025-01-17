@@ -8,11 +8,11 @@ public class BubbleChat : MonoBehaviour
     public bool isRight = true;
     private bool isEntering = true;
 
-    public int maxInput = 100; 
-    public float maxLength = 10f; 
+    public int maxInput = 100;
+    public float maxLength = 10f;
     private float currentLength = 0f;
     private float yLength = 0f;
-    private int inputCount = 0; 
+    private int inputCount = 0;
 
     private bool bomb = false;
 
@@ -45,7 +45,9 @@ public class BubbleChat : MonoBehaviour
             {
                 inputCount++;
                 float newScale = Mathf.Min(currentLength + 0.2f, maxLength);
+                float deltaScale = newScale - currentLength;
                 transform.localScale = new Vector3(newScale, yLength, 1f);
+                transform.position += new Vector3(deltaScale / 2, 0, 0); // œÚ”“—”…Ï
                 currentLength = newScale;
             }
         }
@@ -69,7 +71,7 @@ public class BubbleChat : MonoBehaviour
 
     public void Bomb()
     {
-         // TODO: ≤•∂Øª≠
+        // TODO: ≤•∂Øª≠
         Destroy(gameObject);
     }
 
@@ -81,3 +83,4 @@ public class BubbleChat : MonoBehaviour
         }
     }
 }
+
