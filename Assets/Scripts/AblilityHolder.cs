@@ -10,7 +10,7 @@ namespace QFramework.Example
         {
             /*
             BubbleNormal.InstantiateWithParent(transform.Find("Root"))
-                        .LocalPosition(new Vector3(0, 2))
+                        .LocalPosition(Input.mousePosition)
                         .GetComponent<BubbleNormal>()
                         .enabled = true;
             */

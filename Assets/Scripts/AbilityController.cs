@@ -19,8 +19,7 @@ public class AbilityController : ViewController
 
     private void Start()
     {
-        var a = AblilityHolder.BubbleNormal.InstantiateWithParent(transform.Find("Root"))
-                        .LocalPosition(new Vector3(0, 2));
+        var a = AblilityHolder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(new Vector3(0, 2));
         a.GetComponent<BubbleNormal>().enabled = true;
         a.GetComponent<SpriteRenderer>().enabled = true;
     }
