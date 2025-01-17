@@ -1,9 +1,12 @@
 using QFramework;
+using QFramework.Example;
 using UnityEngine;
 
 public class AbilityController : ViewController
 {
     public LevelSettings mLevelSettings;
+
+    public AblilityHolder AblilityHolder;
 
     public int 剩余可用能力次数;
 
@@ -29,6 +32,6 @@ public class AbilityController : ViewController
     }
     public void Update()
     {
-
+        
     }
 }
