@@ -10,7 +10,7 @@ public enum 可用能力
     聊天泡泡 = 2,
 }
 
-public class AblilityBase : MonoBehaviour
+public class AbilityBase : MonoBehaviour
 {
     public static Dictionary<int, string> 能力表 = new Dictionary<int ,string>
     {
