@@ -4,6 +4,7 @@ using System.Collections;
 public class BubbleFixed : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public float lifeTime = 3f;
     private float timer = 3f;
 
     private bool bomb = false;
@@ -15,6 +16,7 @@ public class BubbleFixed : MonoBehaviour
     private void Start()
     {
         enabled = true;
+        timer = lifeTime;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -32,15 +34,15 @@ public class BubbleFixed : MonoBehaviour
 
     public void Bomb()
     {
-        Debug.Log("ÆÆËé");
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½");
         bomb = true;
         StartCoroutine(BombAndDestroy());
     }
 
     private IEnumerator BombAndDestroy()
     {
-        // ÔÚÕâÀï¿ÉÒÔÌí¼Ó±¬Õ¨Ð§¹ûµÄ´úÂë
-        yield return new WaitForSeconds(0.1f); 
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó±ï¿½Õ¨Ð§ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
+        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
 
@@ -48,7 +50,7 @@ public class BubbleFixed : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Åö×²");
+            Debug.Log("ï¿½ï¿½×²");
             Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();
             Vector2 savedVelocity = otherRb.velocity;
             otherRb.velocity = Vector2.zero;
@@ -59,7 +61,7 @@ public class BubbleFixed : MonoBehaviour
 
     private IEnumerator ResetRigidbody(Rigidbody2D otherRb, Vector2 savedVelocity)
     {
-        yield return new WaitForSeconds(0.2f); 
+        yield return new WaitForSeconds(0.2f);
         otherRb.simulated = true;
         otherRb.velocity = savedVelocity;
     }
