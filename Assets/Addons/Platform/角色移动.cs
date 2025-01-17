@@ -22,7 +22,7 @@ using UnityEngine.InputSystem;
 ///         a. 创建PhysicMaterial，摩擦力设置为0，弹力设置为0
 ///         b. 赋给Player的Rigidibody中的Material
 /// </summary>
-public class NewBehaviourScript : MonoBehaviour
+public class 移动 : MonoBehaviour
 {
     [Header("输入变量")]
     public Vector2 Movement;
