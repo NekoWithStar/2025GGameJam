@@ -36,6 +36,7 @@ public class AbilityController : ViewController
         {
             上升泡泡();
             固定泡泡();
+            聊天泡泡();
         }
     }
 
@@ -76,4 +77,29 @@ public class AbilityController : ViewController
             剩余可用能力次数--;
         }
     }
+
+    public void 聊天泡泡()
+    {
+        if (选中能力 == (int)可用能力.聊天泡泡 && Input.GetMouseButtonDown(0))
+        {
+            var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            localPos.z = 0;
+
+            Vector3 playerPos = transform.position;
+            playerPos.z = 0; 
+
+            Vector3 directionToMouse = (localPos - playerPos).normalized;
+            Vector3 bubblePos=playerPos;
+
+            Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(bubblePos);
+
+            BubbleChat bubbleChat = a.GetComponent<BubbleChat>();
+            bubbleChat.enabled = true;
+            bubbleChat.direction = directionToMouse; 
+
+            a.GetComponent<SpriteRenderer>().enabled = true;
+
+            剩余可用能力次数--;
+        }
+    }   
 }

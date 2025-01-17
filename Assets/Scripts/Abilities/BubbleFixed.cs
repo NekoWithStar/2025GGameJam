@@ -34,14 +34,12 @@ public class BubbleFixed : MonoBehaviour
 
     public void Bomb()
     {
-        Debug.Log("����");
         bomb = true;
         StartCoroutine(BombAndDestroy());
     }
 
     private IEnumerator BombAndDestroy()
     {
-        // ������������ӱ�ըЧ���Ĵ���
         yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
@@ -50,7 +48,6 @@ public class BubbleFixed : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("��ײ");
             Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();
             Vector2 savedVelocity = otherRb.velocity;
             otherRb.velocity = Vector2.zero;
