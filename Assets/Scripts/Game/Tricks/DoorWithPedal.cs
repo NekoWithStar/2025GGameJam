@@ -5,36 +5,60 @@ namespace QFramework.Example
     public partial class DoorWithPedal : ViewController
     {
         public bool canMove = true;
-        public float upTime = 0.5f; // 上升时间
-        public float distance = 5f; // 最高高度
+        public float moveTime = 0.5f; // 移动时间
+        public float distance = 5f;   // 移动距离
 
+        [SerializeField]
         private bool isMovingUp = false;
+        [SerializeField]
         private bool isMovingDown = false;
-        private float timer = 0f;
 
         public Rigidbody2D rb;
         private Vector2 initialPosition;
+        private Vector2 targetPosition;
 
         private void Awake()
         {
             rb = Door.GetComponent<Rigidbody2D>();
-            initialPosition = rb.position;
+            initialPosition = rb.position;  // 记录初始位置
+            targetPosition = initialPosition + Vector2.up * distance; // 计算目标位置
         }
 
         void Start()
         {
             Pedal.OnTriggerEnter2DEvent(e =>
             {
-                isMovingUp = true;
-                isMovingDown = false;
-                timer = 0f;
+                if (canMove)
+                {
+                    isMovingUp = true;
+                    isMovingDown = false;
+                }
             });
 
             Pedal.OnTriggerExit2DEvent(e =>
             {
-                isMovingDown = true;
-                isMovingUp = false;
-                timer = 0f;
+                if (canMove)
+                {
+                    isMovingDown = true;
+                    isMovingUp = false;
+                }
+            });
+
+            Door.OnCollisionEnter2DEvent(c =>
+            {
+                if (c.gameObject.CompareTag("Bubble"))
+                {
+                    canMove = false;
+                    rb.velocity = Vector2.zero; // 停止移动
+                }
+            });
+
+            Door.OnCollisionExit2DEvent(c =>
+            {
+                if (c.gameObject.CompareTag("Bubble"))
+                {
+                    canMove = true;
+                }
             });
         }
 
@@ -50,56 +74,60 @@ namespace QFramework.Example
                 {
                     MoveDown();
                 }
+                else
+                {
+                    rb.velocity = Vector2.zero;
+                }
             }
             else
             {
-                rb.velocity = Vector2.zero;
+                rb.velocity = Vector2.zero; // 停止移动
             }
+
+            // 检测并纠正位置偏差，防止穿模
+            CheckPosition();
         }
 
         private void MoveUp()
         {
-            timer += Time.deltaTime;
-            float progress = timer / upTime;
-            Vector2 targetPosition = initialPosition + Vector2.up * distance;
-            Vector2 direction = (targetPosition - rb.position).normalized;
-            rb.velocity = direction * (distance / upTime);
+            Vector2 direction = Vector2.up;
+            rb.velocity = direction * (distance / moveTime);
 
-            if (progress >= 1f)
+            // 当达到目标位置时停止移动
+            if (rb.position.y >= targetPosition.y)
             {
-                isMovingUp = false;
+                rb.position = targetPosition;
                 rb.velocity = Vector2.zero;
+                isMovingUp = false;
             }
         }
 
         private void MoveDown()
         {
-            timer += Time.deltaTime;
-            float progress = timer / upTime;
-            Vector2 targetPosition = initialPosition;
-            Vector2 direction = (targetPosition - rb.position).normalized;
-            rb.velocity = direction * (distance / upTime);
+            Vector2 direction = Vector2.down;
+            rb.velocity = direction * (distance / moveTime);
 
-            if (progress >= 1f)
+            // 当达到初始位置时停止移动
+            if (rb.position.y <= initialPosition.y)
             {
-                isMovingDown = false;
+                rb.position = initialPosition;
                 rb.velocity = Vector2.zero;
+                isMovingDown = false;
             }
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void CheckPosition()
         {
-            if (collision.gameObject.CompareTag("Bubble"))
-            {
-                canMove = false;
-            }
-        }
+            // 定义允许的最大偏移范围
+            float maxOffset = distance * 1.1f;
 
-        private void OnCollisionExit2D(Collision2D collision)
-        {
-            if (collision.gameObject.CompareTag("Bubble"))
+            // 如果位置超出范围，重置位置和速度
+            if (Mathf.Abs(rb.position.y - initialPosition.y) > maxOffset)
             {
-                canMove = true;
+                rb.position = isMovingUp ? targetPosition : initialPosition;
+                rb.velocity = Vector2.zero;
+                isMovingUp = false;
+                isMovingDown = false;
             }
         }
     }

@@ -32,34 +32,41 @@ public class BubbleFixed : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (bomb) Bomb();
+    }
     public void Bomb()
     {
-        bomb = true;
-        StartCoroutine(BombAndDestroy());
-    }
-
-    private IEnumerator BombAndDestroy()
-    {
-        yield return new WaitForSeconds(0.1f);
+        
         Destroy(gameObject);
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
             Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();
-            Vector2 savedVelocity = otherRb.velocity;
-            otherRb.velocity = Vector2.zero;
-            otherRb.simulated = false;
-            StartCoroutine(ResetRigidbody(otherRb, savedVelocity));
+            if (otherRb != null)
+            {
+                Debug.Log(otherRb.transform.name);
+                Vector2 savedVelocity = otherRb.velocity;
+                RigidbodyConstraints2D savedConstraints = otherRb.constraints;
+                otherRb.velocity = Vector2.zero;
+                otherRb.constraints = RigidbodyConstraints2D.FreezeAll;
+                StartCoroutine(ResetRigidbody(otherRb, savedVelocity, savedConstraints));
+            }
+            }
         }
-    }
 
-    private IEnumerator ResetRigidbody(Rigidbody2D otherRb, Vector2 savedVelocity)
+    private IEnumerator ResetRigidbody(Rigidbody2D otherRb, Vector2 savedVelocity, RigidbodyConstraints2D saveConstraints)
     {
-        yield return new WaitForSeconds(0.2f);
-        otherRb.simulated = true;
+        bomb = false;
+        timer = lifeTime + 1f;
+        yield return new WaitForSeconds(lifeTime);
+        otherRb.constraints = saveConstraints;
         otherRb.velocity = savedVelocity;
+        bomb = true;
     }
 }

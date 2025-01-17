@@ -51,12 +51,10 @@ public class InputManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Ability.选中能力 = 0;
-            Debug.Log("按下1");
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Ability.选中能力 = 1;
-            Debug.Log("按下2");
         }
         if (Input.GetKeyDown(KeyCode.Alpha3)) { Ability .选中能力= 2; }
         if (Input.GetKeyDown(KeyCode.Alpha4)) { Ability .选中能力= 3; } 
