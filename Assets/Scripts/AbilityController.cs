@@ -17,9 +17,10 @@ public class AbilityController : ViewController
     {
         IMGUIHelper.SetDesignResolution(960, 640);
         string 可用能力 = "";
-        foreach (var item in AblilityBase.能力表)
+        foreach (var item in mLevelSettings.可用能力列表)
         {
-            可用能力 += " " +  item.Value;
+            int num = (int)item;
+            可用能力 += " " + AblilityBase.能力表[num];
         }
         GUILayout.Label("可用能力 " + 可用能力);
         GUILayout.Label("选中能力 " + 选中能力);
