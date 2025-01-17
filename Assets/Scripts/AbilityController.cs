@@ -9,8 +9,6 @@ public class AbilityController : ViewController
 
     public int 选中能力;
 
-
-
     public void Awake()
     {
         剩余可用能力次数 = mLevelSettings.总可用能力次数;

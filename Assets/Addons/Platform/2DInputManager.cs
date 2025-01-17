@@ -33,10 +33,6 @@ public class InputManager : MonoBehaviour
         _jumpAction = PlayerInput.actions["Jump"];
         _runAction = PlayerInput.actions["Run"];
         #endregion
-
-        #region 能力选择
-        _chooseAction = PlayerInput.actions["choose"];
-        #endregion
     }
 
     void Update()
@@ -52,8 +48,16 @@ public class InputManager : MonoBehaviour
         #endregion
 
         #region 能力选择
-        if (Input.GetKeyDown(KeyCode.Alpha1)) { Ability .选中能力= 0; }
-        if (Input.GetKeyDown(KeyCode.Alpha2)) { Ability .选中能力= 1; }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Ability.选中能力 = 0;
+            Debug.Log("按下1");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Ability.选中能力 = 1;
+            Debug.Log("按下2");
+        }
         if (Input.GetKeyDown(KeyCode.Alpha3)) { Ability .选中能力= 2; }
         if (Input.GetKeyDown(KeyCode.Alpha4)) { Ability .选中能力= 3; } 
     }
