@@ -16,7 +16,6 @@ public class BubbleFixed : MonoBehaviour
     {
         enabled = true;
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     private void FixedUpdate()
@@ -35,27 +34,32 @@ public class BubbleFixed : MonoBehaviour
     {
         Debug.Log("破碎");
         bomb = true;
+        StartCoroutine(BombAndDestroy());
+    }
+
+    private IEnumerator BombAndDestroy()
+    {
+        // 在这里可以添加爆炸效果的代码
+        yield return new WaitForSeconds(0.1f); 
         Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Spike"))
-        {
-            Bomb();
-        }else if (!collision.gameObject.CompareTag("Player"))
+        if (!collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("碰撞");
             Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();
             Vector2 savedVelocity = otherRb.velocity;
             otherRb.velocity = Vector2.zero;
             otherRb.simulated = false;
-            StartCoroutine(ResetRigidbody(otherRb,savedVelocity));
+            StartCoroutine(ResetRigidbody(otherRb, savedVelocity));
         }
     }
+
     private IEnumerator ResetRigidbody(Rigidbody2D otherRb, Vector2 savedVelocity)
     {
-        yield return new WaitForSeconds(timer + 0.1f); 
+        yield return new WaitForSeconds(0.2f); 
         otherRb.simulated = true;
         otherRb.velocity = savedVelocity;
     }
