@@ -1,4 +1,4 @@
-// Generate Id:61d3e495-6a6c-4486-a15f-34cee255d8df
+// Generate Id:7e6bc2a2-df08-4a69-bf53-3f9af74bee53
 using UnityEngine;
 
 // 1.请在菜单 编辑器扩展/Namespace Settings 里设置命名空间
@@ -9,6 +9,8 @@ namespace QFramework.Example
 	{
 
 		public UnityEngine.Transform BubbleNormal;
+
+		public UnityEngine.Transform BubbleFixed;
 
 	}
 }
