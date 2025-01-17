@@ -4,6 +4,7 @@ using System.Collections;
 public class BubbleFixed : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public float lifeTime = 3f;
     private float timer = 3f;
 
     private bool bomb = false;
@@ -15,6 +16,7 @@ public class BubbleFixed : MonoBehaviour
     private void Start()
     {
         enabled = true;
+        timer = lifeTime;
         rb = GetComponent<Rigidbody2D>();
 
     }
