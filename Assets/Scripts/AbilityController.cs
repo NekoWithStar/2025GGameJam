@@ -1,5 +1,5 @@
-using UnityEngine;
 using QFramework;
+using UnityEngine;
 
 public class AbilityController : ViewController
 {
