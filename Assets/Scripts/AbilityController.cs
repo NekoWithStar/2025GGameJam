@@ -35,6 +35,7 @@ public class AbilityController : ViewController
         if (剩余可用能力次数 > 0)
         {
             上升泡泡();
+            固定泡泡();
         }
     }
 
@@ -63,5 +64,16 @@ public class AbilityController : ViewController
         }
     }
 
-
+    public void 固定泡泡()
+    {
+        if (选中能力 == (int)可用能力.固定泡泡 && Input.GetMouseButtonDown(0))
+        {
+            var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            localPos.z = 0;
+            Transform a = Holder.BubbleFixed.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+            a.GetComponent<BubbleFixed>().enabled = true;
+            a.GetComponent<SpriteRenderer>().enabled = true;
+            剩余可用能力次数--;
+        }
+    }
 }
