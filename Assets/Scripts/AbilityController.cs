@@ -12,8 +12,6 @@ public class AbilityController : ViewController
     public int 剩余可用能力次数;
     public int 选中能力;
 
-
-
     public void Awake()
     {
         剩余可用能力次数 = mLevelSettings.总可用能力次数;
@@ -21,17 +19,49 @@ public class AbilityController : ViewController
 
     private void Start()
     {
-        var a = Holder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(new Vector3(0, 2));
-        a.GetComponent<BubbleNormal>().enabled = true;
-        a.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     private void OnGUI()
     {
-        NekoUI.选中能力.text = "选中能力：" + AbilityBase.能力表[选中能力];
+        if (选中能力 <= mLevelSettings.可用能力列表.Count - 1)
+        {
+            NekoUI.选中能力.text = "选中能力：" + AbilityBase.能力表[选中能力];
+        }
     }
+
     public void Update()
     {
-        
+        修正选中能力();
+        if (剩余可用能力次数 > 0)
+        {
+            上升泡泡();
+        }
     }
+
+    public void 修正选中能力()
+    {
+        if (选中能力 < 0)
+        {
+            选中能力 = mLevelSettings.可用能力列表.Count - 1;
+        }
+        else if (选中能力 > mLevelSettings.可用能力列表.Count - 1)
+        {
+            选中能力 = 0;
+        }
+    }
+
+    public void 上升泡泡()
+    {
+        if (选中能力 == (int)可用能力.上升泡泡 && Input.GetMouseButtonDown(0))
+        {
+            var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            localPos.z = 0;
+            Transform a = Holder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+            a.GetComponent<BubbleNormal>().enabled = true;
+            a.GetComponent<SpriteRenderer>().enabled = true;
+            剩余可用能力次数--;
+        }
+    }
+
+
 }
