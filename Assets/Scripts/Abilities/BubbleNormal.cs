@@ -36,15 +36,17 @@ public class BubbleNormal : MonoBehaviour
             leftTime -= Time.deltaTime;
             if (leftTime <= 0)
             {
-                Bomb();
+                bomb = true;
             }
+        }
+        else
+        {
+            Bomb();
         }
     }
 
     public void Bomb()
     {
-        Debug.Log("ÆÆËé");
-        bomb = true;
         // TODO: ²¥¶¯»­
         Destroy(gameObject);
     }

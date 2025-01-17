@@ -85,17 +85,11 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
 
-            Vector3 playerPos = transform.position;
-            playerPos.z = 0; 
-
-            Vector3 directionToMouse = (localPos - playerPos).normalized;
-            Vector3 bubblePos=playerPos;
-
-            Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(bubblePos);
+            Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
 
             BubbleChat bubbleChat = a.GetComponent<BubbleChat>();
             bubbleChat.enabled = true;
-            bubbleChat.direction = directionToMouse; 
+            bubbleChat.isRight = true;
 
             a.GetComponent<SpriteRenderer>().enabled = true;
 
