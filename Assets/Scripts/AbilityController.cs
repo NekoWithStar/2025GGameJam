@@ -16,7 +16,16 @@ public class AbilityController : ViewController
     private void OnGUI()
     {
         IMGUIHelper.SetDesignResolution(960, 640);
-        GUILayout.Label(text: "当前可用能力列表：" + mLevelSettings.可用能力列表);
+        string 可用能力 = "";
+        foreach(var 能力 in mLevelSettings.可用能力列表)
+        {
+            可用能力 += nameof(能力);
+            if (GUILayout.Button(能力.ToString()))
+            {
+                选中能力 = 能力;
+            }
+        }
+        GUILayout.Label("可用能力 " + 可用能力);
         GUILayout.Label("总可用能力次数:" + mLevelSettings.总可用能力次数);
     }
     public void Update()

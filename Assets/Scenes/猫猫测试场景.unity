@@ -219,6 +219,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3348017318518638897, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
   m_PrefabInstance: {fileID: 961574271373427531}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &560327052 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2748044227852642078, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &560327054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +265,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1119837213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81936539ae2d84665a86a2b3f531955f, type: 3}
+  m_Script: {fileID: 11500000, guid: 77ddb2f054b18dd458d7939659b3e5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Namespace: QFramework.Example
@@ -270,6 +275,9 @@ MonoBehaviour:
   PrefabFolder: Assets/Art/Prefab
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
+  Feet: {fileID: 1608700661}
+  Body: {fileID: 560327052}
+  AblilityHolder: {fileID: 1897665303}
 --- !u!1 &1360732041
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +365,11 @@ Transform:
 --- !u!1 &1608700659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3102293178755929279, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1608700661 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2962474342066295687, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
   m_PrefabInstance: {fileID: 961574271373427531}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1608700662
