@@ -214,17 +214,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &560327051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3348017318518638897, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &560327054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560327051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: Body
+  CustomComment: 
+  mComponentName: BoxCollider2D
 --- !u!114 &654158328 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 168675150536714578, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
   m_PrefabInstance: {fileID: 961574271373427531}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1119837213}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71af72cb3145c8941bcaf472ea0c0f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1119837213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2387580988409794455, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1119837217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119837213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81936539ae2d84665a86a2b3f531955f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Namespace: QFramework.Example
+  ScriptName: Player
+  ScriptsFolder: Assets/Scripts/Game
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Art/Prefab
+  ArchitectureFullTypeName: 
+  ViewControllerFullTypeName: 
 --- !u!1 &1360732041
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +354,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1608700659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3102293178755929279, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1608700662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608700659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: Feet
+  CustomComment: 
+  mComponentName: BoxCollider2D
 --- !u!1 &1714801068
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +505,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1897665301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7060316623888624556, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1897665303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897665301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211104225f15df341bae0c8a948ba302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Namespace: QFramework.Example
+  ScriptName: AblilityHolder
+  ScriptsFolder: Assets\Scripts
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Art/Prefab
+  ArchitectureFullTypeName: 
+  ViewControllerFullTypeName: 
+  mLevelSettings: {fileID: 11400000, guid: 12d7505f830738147aa8f1e221b722a0, type: 2}
+  "\u5269\u4F59\u53EF\u7528\u80FD\u529B\u6B21\u6570": 1
+  "\u9009\u4E2D\u80FD\u529B": 0
+--- !u!114 &1897665304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897665301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: AblilityHolder
+  CustomComment: 
+  mComponentName: AbilityController
 --- !u!1001 &961574271373427531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -494,7 +603,22 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2387580988409794455, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1119837217}
+    - targetCorrespondingSourceObject: {fileID: 3102293178755929279, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1608700662}
+    - targetCorrespondingSourceObject: {fileID: 3348017318518638897, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 560327054}
+    - targetCorrespondingSourceObject: {fileID: 7060316623888624556, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1897665303}
+    - targetCorrespondingSourceObject: {fileID: 7060316623888624556, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1897665304}
   m_SourcePrefab: {fileID: 100100000, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
 --- !u!1001 &6827400500957518780
 PrefabInstance:
