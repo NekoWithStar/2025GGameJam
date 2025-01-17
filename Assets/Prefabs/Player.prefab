@@ -34,6 +34,7 @@ Transform:
   m_Children:
   - {fileID: 2331221901947411552}
   - {fileID: 8353664288823412408}
+  - {fileID: 8299960769600391913}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4910960461279861601
@@ -289,3 +290,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0251858, y: 3.7716048}
   m_EdgeRadius: 0
+--- !u!1 &7060316623888624556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8299960769600391913}
+  m_Layer: 0
+  m_Name: AblilityHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8299960769600391913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7060316623888624556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 190586484952487521}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
