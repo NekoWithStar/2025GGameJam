@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -14,7 +15,6 @@ namespace QFramework
 
         }
 
-        [Obsolete]
         public override IEnumerator Download(Action callback = null)
         {
             m_WebRequest = UnityWebRequest.Get(m_Url);

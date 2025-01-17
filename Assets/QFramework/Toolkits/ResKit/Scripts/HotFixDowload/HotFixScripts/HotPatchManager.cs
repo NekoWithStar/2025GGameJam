@@ -170,7 +170,6 @@ namespace QFramework
         /// </summary>
         /// <param name="callBack"></param>
         /// <returns></returns>
-        [Obsolete]
         IEnumerator UnPackToPersistentDataPath(Action callBack)
         {
             foreach (string fileName in m_UnPackedList)

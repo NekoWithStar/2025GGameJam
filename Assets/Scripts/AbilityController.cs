@@ -7,7 +7,7 @@ public class AbilityController : ViewController
     public LevelSettings mLevelSettings;
 
     public NekoUI NekoUI;
-    public AbilityHolder AblilityHolder;
+    public AbilityHolder Holder;
 
     public int 剩余可用能力次数;
     public int 选中能力;
@@ -21,8 +21,7 @@ public class AbilityController : ViewController
 
     private void Start()
     {
-        var a = AblilityHolder.BubbleNormal.InstantiateWithParent(transform.Find("Root"))
-                        .LocalPosition(new Vector3(0, 2));
+        var a = Holder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(new Vector3(0, 2));
         a.GetComponent<BubbleNormal>().enabled = true;
         a.GetComponent<SpriteRenderer>().enabled = true;
     }

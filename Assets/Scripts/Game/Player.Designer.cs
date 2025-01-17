@@ -1,4 +1,4 @@
-// Generate Id:7c24e73e-d872-4067-9662-aac884d94548
+// Generate Id:d6335a49-59e3-4335-91f9-82429749e1fd
 using UnityEngine;
 
 // 1.请在菜单 编辑器扩展/Namespace Settings 里设置命名空间
@@ -12,7 +12,7 @@ namespace QFramework.Example
 
 		public BoxCollider2D Body;
 
-		public QFramework.Example.AbilityHolder AblilityHolder;
+		public Transform AbilityHolder;
 
 	}
 }

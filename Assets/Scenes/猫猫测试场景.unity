@@ -127,6 +127,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7429562073719136164, guid: d30e431af806194489cda5704b4ffb48, type: 3}
   m_PrefabInstance: {fileID: 6495959879086467626}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &310415754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3166416389305922178, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &455534660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5260732139740126489, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+  m_PrefabInstance: {fileID: 961574271373427531}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5b772edbecaa2468b37df1f497076d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &654158328 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 168675150536714578, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
@@ -448,17 +464,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1897665306 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 455406587036823789, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-  m_PrefabInstance: {fileID: 961574271373427531}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd9d19bef56beea41825c341fbe254eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &961574271373427531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -523,6 +528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2413976242111009445, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      propertyPath: mComponentName
+      value: UnityEngine.Transform
+      objectReference: {fileID: 0}
     - target: {fileID: 3166416389305922178, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -551,6 +560,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5260732139740126489, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      propertyPath: BubbleNormal
+      value: 
+      objectReference: {fileID: 310415754}
     - target: {fileID: 8753420324077666359, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -569,13 +582,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4741224617241942034, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: Holder
+      value: 
+      objectReference: {fileID: 455534660}
+    - target: {fileID: 4741224617241942034, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: NekoUI
       value: 
       objectReference: {fileID: 1170171983}
     - target: {fileID: 4741224617241942034, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: AblilityHolder
       value: 
-      objectReference: {fileID: 1897665306}
+      objectReference: {fileID: 0}
     - target: {fileID: 6094365831748800375, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: m_Name
       value: AblilityController
