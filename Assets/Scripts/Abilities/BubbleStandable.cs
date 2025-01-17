@@ -30,7 +30,7 @@ public class BubbleNormal : MonoBehaviour
     {
         Debug.Log("ÆÆËé");
         bomb = true;
-        // ²¥¶¯»­
+        // TODO: ²¥¶¯»­
         Destroy(gameObject);
     }
 
