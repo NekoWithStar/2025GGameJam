@@ -13,6 +13,8 @@ namespace QFramework.Example
         [SerializeField]
         private bool isMovingDown = false;
 
+        public bool canBubbleTrigger = true;
+
         public Rigidbody2D rb;
         private Vector2 initialPosition;
         private Vector2 targetPosition;
@@ -28,6 +30,10 @@ namespace QFramework.Example
         {
             Pedal.OnTriggerEnter2DEvent(e =>
             {
+                if (!canBubbleTrigger && e.transform.CompareTag("Bubble"))
+                {
+                    return;
+                }
                 if (canMove)
                 {
                     isMovingUp = true;
@@ -37,6 +43,10 @@ namespace QFramework.Example
 
             Pedal.OnTriggerExit2DEvent(e =>
             {
+                if (!canBubbleTrigger && e.transform.CompareTag("Bubble"))
+                {
+                    return;
+                }
                 if (canMove)
                 {
                     isMovingDown = true;

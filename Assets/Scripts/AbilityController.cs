@@ -196,6 +196,7 @@ public class AbilityController : ViewController
                 a.transform.gameObject.SetActive(true);
                 a.GetComponent<BubbleTele>().pairBubble = tempBubbleTele;
                 tempBubbleTele.pairBubble = a.GetComponent<BubbleTele>();
+                剩余可用能力次数--;
             }
         }
     }

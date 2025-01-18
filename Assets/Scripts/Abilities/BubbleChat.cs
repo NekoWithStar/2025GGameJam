@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using QFramework;
+using QFramework.Example;
 
 public class BubbleChat : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class BubbleChat : MonoBehaviour
     private float inputTimer = 1f;
     private bool inputDetected = false;
 
+    private Cinemachine.CinemachineVirtualCamera cmr;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -32,7 +35,8 @@ public class BubbleChat : MonoBehaviour
         timer = lifeTime;
         currentLength = transform.localScale.x;
         yLength = transform.localScale.y;
-        FindFirstObjectByType<Cinemachine.CinemachineVirtualCamera>().Follow = transform;
+        cmr = FindFirstObjectByType<Cinemachine.CinemachineVirtualCamera>();
+        cmr.Follow = transform;
     }
 
     private void Update()
@@ -40,13 +44,15 @@ public class BubbleChat : MonoBehaviour
         CheckBomb();
         CheckInput();
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            isEntering = false;
+            cmr.Follow = FindFirstObjectByType<Player>().transform;
+            cmr.LookAt= FindFirstObjectByType<Player>().transform;
+        }
+
         if (inputCount < maxInput && isEntering)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                isEntering = false;
-                FindFirstObjectByType<Cinemachine.CinemachineVirtualCamera>().Follow = FindFirstObjectByType<ÒÆ¶¯>().transform;
-            }
             if (Input.anyKeyDown)
             {
                 inputCount++;
@@ -97,7 +103,8 @@ public class BubbleChat : MonoBehaviour
 
     public void Bomb()
     {
-        FindFirstObjectByType<Cinemachine.CinemachineVirtualCamera>().Follow = FindFirstObjectByType<ÒÆ¶¯>().transform;
+        cmr.Follow = FindFirstObjectByType<Player>().transform;
+        cmr.LookAt = FindFirstObjectByType<Player>().transform;
         animator.SetBool("bomb", true);
         AudioKit.PlaySound("Resources://Audios/Sounds/bubbledie");
         Invoke(nameof(DestroyGameObject), 1.5f);

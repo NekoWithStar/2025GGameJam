@@ -12782,6 +12782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 7975136218194992376, guid: a579c48cb13e53440ac84c8672b2005d, type: 3}
+      propertyPath: gotoLevel
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
