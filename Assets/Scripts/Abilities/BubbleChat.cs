@@ -14,6 +14,7 @@ public class BubbleChat : MonoBehaviour
 
     public int maxInput = 100;
     public float maxLength = 10f;
+    public float deltaLength = 0.2f;
     private float currentLength = 0f;
     private float yLength = 0f;
     private int inputCount = 0;
@@ -49,7 +50,7 @@ public class BubbleChat : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 inputCount++;
-                float newScale = Mathf.Min(currentLength + 0.2f, maxLength);
+                float newScale = Mathf.Min(currentLength +deltaLength,  maxLength);
                 float deltaScale = newScale - currentLength;
                 transform.localScale = new Vector3(newScale, yLength, 1f);
                 transform.position += new Vector3(deltaScale / 2, 0, 0); 

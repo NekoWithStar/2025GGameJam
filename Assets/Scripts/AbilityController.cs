@@ -59,7 +59,7 @@ public class AbilityController : ViewController
         UpdatedUI();
         panel.Count.text = "剩余泡泡 " + 剩余可用能力次数;
         选择能力key = (int)mLevelSettings.可用能力列表[listIndex];
-        if (剩余可用能力次数 > 0 && 是否在范围内)
+        if (剩余可用能力次数 > 0 && 是否在范围内 && !InputManager.IsPaused)
         {
             上升泡泡();
             固定泡泡();

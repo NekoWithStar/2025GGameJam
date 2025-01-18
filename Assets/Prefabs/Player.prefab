@@ -102,11 +102,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  lifeTime: 3
+  lifeTime: 4
   isRight: 1
   isEntering: 1
   maxInput: 100
   maxLength: 8
+  deltaLength: 0.2
 --- !u!114 &6383823914703251070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  lifeTime: 3
+  lifeTime: 5
 --- !u!114 &8317099257280393949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,7 +904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "\u4E0A\u5347\u901F\u5EA6": 1.4
   rb: {fileID: 0}
-  lifeTime: 9
+  lifeTime: 8
 --- !u!114 &2413976242111009445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,7 +1197,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   pairBubble: {fileID: 0}
   locked: 0
-  lifeTime: 999
+  lifeTime: 60
 --- !u!114 &4598107101189991049
 MonoBehaviour:
   m_ObjectHideFlags: 0

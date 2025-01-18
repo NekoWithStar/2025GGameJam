@@ -38,7 +38,6 @@ public class BubbleTele : MonoBehaviour
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
-        Debug.Log(collision.transform.name);
         if (collision.transform.CompareTag("Player") && pairBubble != null && !locked)
         {
             locked = true;

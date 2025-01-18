@@ -1,3 +1,4 @@
+using QFramework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,7 +7,7 @@ public class InputManager : MonoBehaviour
     public static PlayerInput PlayerInput;
     public 移动 Player;
     public AbilityController Ability;
-    public bool IsPaused;
+    public static bool IsPaused;
 
     #region 2D平台移动
     public static Vector2 Movement; // 移动方向
@@ -94,16 +95,20 @@ public class InputManager : MonoBehaviour
         {
             switchKey = !switchKey;
         }
+        #endregion
+
+    }
+    private void OnGUI()
+    {
         if (switchKey)
         {
+            IMGUIHelper.SetDesignResolution(320, 80);
             if (GUILayout.Button("Level 1")) LevelKit.LoadLevel(1);
             if (GUILayout.Button("Level 2")) LevelKit.LoadLevel(2);
             if (GUILayout.Button("Level 3")) LevelKit.LoadLevel(3);
             if (GUILayout.Button("Level 4")) LevelKit.LoadLevel(4);
             if (GUILayout.Button("Level 5")) LevelKit.LoadLevel(5);
         }
-        #endregion
-
     }
 
 }
