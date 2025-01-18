@@ -1267,7 +1267,7 @@ GameObject:
   - component: {fileID: 1468533395}
   m_Layer: 0
   m_Name: World
-  m_TagString: Untagged
+  m_TagString: Camare
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

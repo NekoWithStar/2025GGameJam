@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bubble
   - Spike
+  - World
+  - Camare
   layers:
   - Default
   - TransparentFX

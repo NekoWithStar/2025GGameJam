@@ -180,7 +180,7 @@ public class AbilityController : ViewController
         {
             Debug.Log(collider.name);
             // 如果碰撞到的不是玩家自身，则认为不能放置
-            if (!collider.CompareTag("Player") && collider != bubbleCollider)
+            if ((!collider.CompareTag("Player") || !collider.CompareTag("Camare") && collider != bubbleCollider))
             {
                 Destroy(bubble.gameObject);
                 return false;
