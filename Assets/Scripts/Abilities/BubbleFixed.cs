@@ -38,7 +38,7 @@ public class BubbleFixed : MonoBehaviour
     {
         animator.SetTrigger("BubbleFixedBomb");
         animator.SetBool("bomb", true);
-        Invoke("DestroyGameObject", 1.5f);
+        Invoke("DestroyGameObject", 1f);
     }
 
     private void DestroyGameObject()
