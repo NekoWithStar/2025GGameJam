@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14204334, g: 0.7924528, b: 0.17007297, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -170,19 +170,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 2f068b95764d8b44f977696a2240a70f, type: 3}
+    m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 48
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5269\u4F59\u6CE1\u6CE1\u6570\uFF1A"
+  m_Text: "\u5269\u4F59\u6C14\u6CE1: "
 --- !u!114 &6736205767321935254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,7 +570,8 @@ MonoBehaviour:
   NekoUI: {fileID: 0}
   Holder: {fileID: 0}
   "\u5269\u4F59\u53EF\u7528\u80FD\u529B\u6B21\u6570": 0
-  "\u9009\u4E2D\u80FD\u529B": 0
+  listIndex: 0
+  "\u9009\u62E9\u80FD\u529Bkey": 0
   "\u6700\u5927\u5141\u8BB8\u8DDD\u79BB": 10
   "\u662F\u5426\u5728\u8303\u56F4\u5185": 0
   LockSwitch: 0
