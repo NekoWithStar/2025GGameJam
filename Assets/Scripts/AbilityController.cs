@@ -1,6 +1,10 @@
 using QFramework;
 using QFramework.Example;
+using System;
+using System.Collections.Generic;
+using UnityEditor.Search;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AbilityController : ViewController
 {
@@ -22,6 +26,12 @@ public class AbilityController : ViewController
 
     private BubbleTele tempBubbleTele;
 
+    public Panel panel;
+    public List<Sprite> unlocked_sprites;
+    public List<Sprite> selected_sprites;
+    public List<Image> panel_images;
+    public Sprite Locked;
+
     public void Awake()
     {
         剩余可用能力次数 = mLevelSettings.总可用能力次数;
@@ -35,16 +45,14 @@ public class AbilityController : ViewController
 
     private void OnGUI()
     {
-        if (选中能力 <= mLevelSettings.可用能力列表.Count - 1)
-        {
-            NekoUI.选中能力.text = "选中能力：" + AbilityBase.能力表[选中能力];
-        }
+        
     }
 
     public void Update()
     {
         修正选中能力();
         CheckDistance();
+        UpdatedUI();
         if (剩余可用能力次数 > 0 && 是否在范围内)
         {
             上升泡泡();
@@ -52,6 +60,19 @@ public class AbilityController : ViewController
             聊天泡泡();
             传送泡泡();
         }
+    }
+
+    private void UpdatedUI()
+    {
+        for (int i = 0 ; i < 4; i++)
+        {
+            panel_images[i].sprite = Locked;
+        }
+        for (int i = 0; i < mLevelSettings.可用能力列表.Count; i++)
+        {
+            panel_images[i].sprite = unlocked_sprites[i];
+        }
+        panel_images[选中能力].sprite = selected_sprites[选中能力];
     }
 
     public void CheckDistance()
@@ -178,15 +199,13 @@ public class AbilityController : ViewController
 
         foreach (var collider in colliders)
         {
-            Debug.Log(collider.name);
+            Debug.Log(collider.tag);
             // 如果碰撞到的不是玩家自身，则认为不能放置
-            if ((!collider.CompareTag("Player") || !collider.CompareTag("Camare") && collider != bubbleCollider))
+            if (!collider.gameObject.CompareTag("Player"))
             {
-                Destroy(bubble.gameObject);
-                return false;
+                //return false;
             }
         }
-
         return true;
     }
 }

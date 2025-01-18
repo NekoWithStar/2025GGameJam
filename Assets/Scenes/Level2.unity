@@ -772,17 +772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71af72cb3145c8941bcaf472ea0c0f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &773187177 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4741224617241942034, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
-  m_PrefabInstance: {fileID: 2427768258757537217}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211104225f15df341bae0c8a948ba302, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &785306363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1256,7 @@ GameObject:
   - component: {fileID: 1468533395}
   m_Layer: 0
   m_Name: World
-  m_TagString: Camare
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7031,6 +7020,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 198385292428087461, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198385292428087461, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198385292428087461, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198385292428087461, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746013670529570620, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746013670529570620, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746013670529570620, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746013670529570620, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951639902735153701, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951639902735153701, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951639902735153701, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951639902735153701, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799554165160987445, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: Holder
+      value: 
+      objectReference: {fileID: 455534660}
+    - target: {fileID: 2799554165160987445, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: NekoUI
+      value: 
+      objectReference: {fileID: 1170171983}
+    - target: {fileID: 2799554165160987445, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: mLevelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 18df9563637a486498ba115a1af01d4d, type: 2}
     - target: {fileID: 4741224617241942034, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: Holder
       value: 
@@ -7050,6 +7099,22 @@ PrefabInstance:
     - target: {fileID: 6094365831748800375, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: m_Name
       value: AblilityController
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646724094836502844, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646724094836502844, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646724094836502844, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646724094836502844, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7845691002564910622, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7186,12 +7251,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7610120751011079705, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
       propertyPath: m_Name
-      value: NekoUI
+      value: Kits
       objectReference: {fileID: 0}
-    - target: {fileID: 7915216656422181678, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
-      propertyPath: levelSettings
-      value: 
-      objectReference: {fileID: 11400000, guid: 18df9563637a486498ba115a1af01d4d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7398,7 +7459,7 @@ PrefabInstance:
     - target: {fileID: 2328289746804651827, guid: dc4926d96ddfb2a4fbfd13ee5f5ee0f8, type: 3}
       propertyPath: Ability
       value: 
-      objectReference: {fileID: 773187177}
+      objectReference: {fileID: 0}
     - target: {fileID: 2370570819538003532, guid: dc4926d96ddfb2a4fbfd13ee5f5ee0f8, type: 3}
       propertyPath: m_Name
       value: InputManager
