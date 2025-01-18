@@ -94,7 +94,6 @@ public class BubbleChat : MonoBehaviour
 
     public void Bomb()
     {
-        animator.SetTrigger("BubbleChatBomb");
         animator.SetBool("bomb", true);
         Invoke("DestroyGameObject", 1f);
     }
