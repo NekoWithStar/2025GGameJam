@@ -13,9 +13,12 @@ public class AbilityController : ViewController
     public int 选中能力;
 
     public float 最大允许距离;
-    [SerializeField] private bool 是否在范围内;
+    public bool 是否在范围内;
+    public bool LockSwitch;
     private Player mPlayer;
     private Transform playerBody;
+
+    private BubbleTele tempBubbleTele;
 
     public void Awake()
     {
@@ -45,6 +48,7 @@ public class AbilityController : ViewController
             上升泡泡();
             固定泡泡();
             聊天泡泡();
+            传送泡泡();
         }
     }
 
@@ -64,6 +68,10 @@ public class AbilityController : ViewController
         else if (选中能力 > mLevelSettings.可用能力列表.Count - 1)
         {
             选中能力 = 0;
+        }
+        if(LockSwitch)
+        {
+            选中能力 = (int)可用能力.传送泡泡;
         }
     }
 
@@ -108,6 +116,34 @@ public class AbilityController : ViewController
             a.GetComponent<SpriteRenderer>().enabled = true;
 
             剩余可用能力次数--;
+        }
+    }
+
+    public void 传送泡泡()
+    {
+        if(选中能力 == (int)可用能力.传送泡泡 && Input.GetMouseButtonDown(0))
+        {
+            if (!LockSwitch)
+            {
+                LockSwitch = true;
+                Vector3 localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                localPos.z = 0;
+                Transform a = Holder.BubbleTele.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+                tempBubbleTele = a.GetComponent<BubbleTele>();
+                a.transform.gameObject.SetActive(true);
+                剩余可用能力次数--;
+            }
+            else
+            {
+                LockSwitch = false;
+                Vector3 localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                localPos.z = 0;
+                Transform a = Holder.BubbleTele.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+                a.transform.gameObject.SetActive(true);
+                a.GetComponent<BubbleTele>().pairBubble = tempBubbleTele;
+                tempBubbleTele.pairBubble = a.GetComponent<BubbleTele>();
+                剩余可用能力次数--;
+            }
         }
     }
 }
