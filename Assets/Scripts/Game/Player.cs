@@ -7,9 +7,18 @@ namespace QFramework.Example
 {
 	public partial class Player : ViewController
 	{
+        Animator animator;
+
 		void Start()
 		{
-			// Code Here
+			animator = GetComponent<Animator>();
 		}
-	}
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Spike"))
+            {
+                    animator.SetBool("Die", true);
+            }
+        }
+    }
 }
