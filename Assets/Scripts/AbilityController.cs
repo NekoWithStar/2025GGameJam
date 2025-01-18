@@ -39,6 +39,7 @@ public class AbilityController : ViewController
 
     private void Start()
     {
+        AudioKit.Settings.IsSoundOn.Value = true;
         mPlayer = FindObjectOfType<Player>();
         playerBody = mPlayer.Body.transform;
     }
@@ -199,7 +200,6 @@ public class AbilityController : ViewController
 
         foreach (var collider in colliders)
         {
-            Debug.Log(collider.tag);
             // 如果碰撞到的不是玩家自身，则认为不能放置
             if (!collider.gameObject.CompareTag("Player"))
             {

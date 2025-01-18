@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 573492559135874766}
   - component: {fileID: 6383823914703251070}
   - component: {fileID: 7914033784022789269}
-  - component: {fileID: 3629355868977212364}
   - component: {fileID: 418461264222136166}
+  - component: {fileID: 7300812992861793669}
   m_Layer: 6
   m_Name: BubbleChat
   m_TagString: Bubble
@@ -33,7 +33,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.06999999, y: -4.32, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2322492845403105006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,8 +149,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!68 &3629355868977212364
-EdgeCollider2D:
+--- !u!95 &418461264222136166
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963020909445375997}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5ce5a67ce5585d41b46c417eafc104c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &7300812992861793669
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -182,42 +203,18 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.44381762, y: 0.24631968}
-  - {x: 0.4328332, y: -0.252234}
-  - {x: 0.2523234, y: -0.44508597}
-  - {x: -0.25325823, y: -0.45219418}
-  - {x: -0.43672502, y: -0.24735802}
-  - {x: -0.44370437, y: 0.23643929}
-  - {x: -0.24697065, y: 0.44007707}
-  - {x: 0.24975991, y: 0.44142383}
-  - {x: 0.44146872, y: 0.24388069}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!95 &418461264222136166
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963020909445375997}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f5ce5a67ce5585d41b46c417eafc104c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2387580988409794455
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +461,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026445702, y: -0.2058989}
+  m_Offset: {x: -0.0025618374, y: 0.022298276}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -475,7 +472,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30063066, y: 0.23339608}
+  m_Size: {x: 0.42031145, y: 0.68979037}
   m_EdgeRadius: 0
 --- !u!114 &5197348589681120730
 MonoBehaviour:
@@ -903,9 +900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34db220d692f61c48a8dce2b1e98bec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u4E0A\u5347\u901F\u5EA6": 0.8
+  "\u4E0A\u5347\u901F\u5EA6": 1.4
   rb: {fileID: 0}
-  lifeTime: 5
+  lifeTime: 9
 --- !u!114 &2413976242111009445
 MonoBehaviour:
   m_ObjectHideFlags: 0
