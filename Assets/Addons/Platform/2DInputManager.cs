@@ -58,6 +58,11 @@ public class InputManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3)) { Ability .选中能力= 2; }
         if (Input.GetKeyDown(KeyCode.Alpha4)) { Ability .选中能力= 3; } 
+
+        if(Input.GetKeyUp(KeyCode.R))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        }
     }
     #endregion
 }

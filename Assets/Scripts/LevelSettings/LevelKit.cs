@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelKit : MonoBehaviour
 {
-    public static int CurrentLevel = 0;
+    public static int CurrentLevel = 1;
     public static void LoadLevel(int level)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Level" + level.ToString());
