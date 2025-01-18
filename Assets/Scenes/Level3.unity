@@ -13752,7 +13752,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2733884242957334183}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 40496551077127724, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_Name
@@ -13760,11 +13760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.992735
+      value: 954.00726
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4754415
+      value: 542.47546
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13776,15 +13776,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13803,11 +13803,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
---- !u!4 &2137492208 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
-  m_PrefabInstance: {fileID: 2137492207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &961574271373427531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14126,6 +14121,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5758930788833083193, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
+      propertyPath: levelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: f634b211d334b1c458a479eeda952b39, type: 2}
     - target: {fileID: 7610120751011079705, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
       propertyPath: m_Name
       value: Kits
@@ -14136,10 +14135,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: f634b211d334b1c458a479eeda952b39, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2098965451038226352, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2137492208}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7610120751011079705, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
       insertIndex: -1
@@ -14148,11 +14144,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2733884242957334185}
   m_SourcePrefab: {fileID: 100100000, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
---- !u!224 &2733884242957334183 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2098965451038226352, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
-  m_PrefabInstance: {fileID: 2733884242957334182}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2733884242957334184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7610120751011079705, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
@@ -14182,6 +14173,7 @@ MonoBehaviour:
   layerGround:
     serializedVersion: 2
     m_Bits: 0
+  radius: 5
   Circle: {fileID: 0}
 --- !u!114 &2733884242957334186
 MonoBehaviour:
@@ -14207,6 +14199,7 @@ MonoBehaviour:
   layerGround:
     serializedVersion: 2
     m_Bits: 0
+  radius: 5
   Circle: {fileID: 0}
 --- !u!1001 &3530345861915286068
 PrefabInstance:
@@ -14430,6 +14423,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 494648833}
   - {fileID: 1804544850}
+  - {fileID: 2137492207}
   - {fileID: 2733884242957334182}
   - {fileID: 3530345861915286068}
   - {fileID: 961574271373427531}
