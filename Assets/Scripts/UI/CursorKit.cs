@@ -1,6 +1,4 @@
 using UnityEngine;
-using QFramework;
-using static UnityEditor.PlayerSettings;
 
 namespace QFramework.Example
 {

@@ -5,6 +5,7 @@ public class BubbleNormal : MonoBehaviour
 {
     Animator animator;
     public float 上升速度 = 1f;
+    public float 水平速度 = 0f;
     public Rigidbody2D rb;
     public float lifeTime = 5f;
     private float leftTime;
@@ -25,7 +26,7 @@ public class BubbleNormal : MonoBehaviour
         if(!bomb)
         {
             // 每秒上升
-            rb.velocity = new Vector2(0, 上升速度);
+            rb.velocity = new Vector2(水平速度, 上升速度);
         }
     }
 
