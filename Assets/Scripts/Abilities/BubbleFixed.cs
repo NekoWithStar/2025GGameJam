@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class BubbleFixed : MonoBehaviour
 {
@@ -33,7 +33,7 @@ public class BubbleFixed : MonoBehaviour
     }
     public void Bomb()
     {
-        
+
         Destroy(gameObject);
     }
 
@@ -52,8 +52,8 @@ public class BubbleFixed : MonoBehaviour
                 otherRb.constraints = RigidbodyConstraints2D.FreezeAll;
                 StartCoroutine(ResetRigidbody(otherRb, savedVelocity, savedConstraints));
             }
-            }
         }
+    }
 
     private IEnumerator ResetRigidbody(Rigidbody2D otherRb, Vector2 savedVelocity, RigidbodyConstraints2D saveConstraints)
     {
