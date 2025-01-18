@@ -12,6 +12,11 @@ public class AbilityController : ViewController
     public int 剩余可用能力次数;
     public int 选中能力;
 
+    public float 最大允许距离;
+    [SerializeField] private bool 是否在范围内;
+    private Player mPlayer;
+    private Transform playerBody;
+
     public void Awake()
     {
         剩余可用能力次数 = mLevelSettings.总可用能力次数;
@@ -19,6 +24,8 @@ public class AbilityController : ViewController
 
     private void Start()
     {
+        mPlayer = FindObjectOfType<Player>();
+        playerBody = mPlayer.Body.transform;
     }
 
     private void OnGUI()
@@ -32,12 +39,20 @@ public class AbilityController : ViewController
     public void Update()
     {
         修正选中能力();
-        if (剩余可用能力次数 > 0)
+        CheckDistance();
+        if (剩余可用能力次数 > 0 && 是否在范围内)
         {
             上升泡泡();
             固定泡泡();
             聊天泡泡();
         }
+    }
+
+    public void CheckDistance()
+    {
+        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0;
+        是否在范围内 = Vector3.Distance(mousePos, playerBody.position) < 最大允许距离;
     }
 
     public void 修正选中能力()
@@ -59,8 +74,7 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
             Transform a = Holder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
-            a.GetComponent<BubbleNormal>().enabled = true;
-            a.GetComponent<SpriteRenderer>().enabled = true;
+            a.transform.gameObject.SetActive(true);
             剩余可用能力次数--;
         }
     }
@@ -72,8 +86,7 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
             Transform a = Holder.BubbleFixed.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
-            a.GetComponent<BubbleFixed>().enabled = true;
-            a.GetComponent<SpriteRenderer>().enabled = true;
+            a.transform.gameObject.SetActive(true);
             剩余可用能力次数--;
         }
     }
@@ -85,21 +98,16 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
 
-            Vector3 playerPos = transform.position;
-            playerPos.z = 0; 
+            Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
 
-            Vector3 directionToMouse = (localPos - playerPos).normalized;
-            Vector3 bubblePos=playerPos;
-
-            Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(bubblePos);
+            a.transform.gameObject.SetActive(true);
 
             BubbleChat bubbleChat = a.GetComponent<BubbleChat>();
-            bubbleChat.enabled = true;
-            bubbleChat.direction = directionToMouse; 
+            bubbleChat.isRight = true;
 
             a.GetComponent<SpriteRenderer>().enabled = true;
 
             剩余可用能力次数--;
         }
-    }   
+    }
 }

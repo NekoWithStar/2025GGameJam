@@ -9,10 +9,6 @@ public class BubbleNormal : MonoBehaviour
 
 
     private bool bomb = false;
-    private void Awake()
-    {
-        enabled = false;
-    }
 
     private void Start()
     {
@@ -36,15 +32,17 @@ public class BubbleNormal : MonoBehaviour
             leftTime -= Time.deltaTime;
             if (leftTime <= 0)
             {
-                Bomb();
+                bomb = true;
             }
+        }
+        else
+        {
+            Bomb();
         }
     }
 
     public void Bomb()
     {
-        Debug.Log("ÆÆËé");
-        bomb = true;
         // TODO: ²¥¶¯»­
         Destroy(gameObject);
     }
