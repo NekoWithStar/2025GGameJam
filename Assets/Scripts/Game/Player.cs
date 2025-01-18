@@ -17,7 +17,7 @@ namespace QFramework.Example
         {
             if (collision.gameObject.CompareTag("Spike"))
             {
-                    animator.SetBool("Die", true);
+                    animator.SetBool("IsDead", true);
             }
         }
     }
