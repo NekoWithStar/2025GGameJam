@@ -54,6 +54,7 @@ public class AbilityController : ViewController
         修正选中能力();
         CheckDistance();
         UpdatedUI();
+        panel.Count.text = "剩余泡泡数：" + 剩余可用能力次数;
         if (剩余可用能力次数 > 0 && 是否在范围内)
         {
             上升泡泡();

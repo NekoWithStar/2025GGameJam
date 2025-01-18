@@ -1,4 +1,4 @@
-// Generate Id:3d107568-db49-49f3-8c5c-974ea0a95323
+// Generate Id:01cac23c-c4d6-45ac-b7ca-61ca66cf6c29
 using UnityEngine;
 
 // 1.请在菜单 编辑器扩展/Namespace Settings 里设置命名空间
@@ -15,6 +15,8 @@ namespace QFramework.Example
 		public UnityEngine.UI.Image Image3;
 
 		public UnityEngine.UI.Image Image4;
+
+		public UnityEngine.UI.Text Count;
 
 	}
 }
