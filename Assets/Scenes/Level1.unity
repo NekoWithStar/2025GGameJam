@@ -259,7 +259,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 11.512597, y: 1.416935}
+  m_Offset: {x: 10.998198, y: 0.532166}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -270,7 +270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 23.063704, y: 1.0506043}
+  m_Size: {x: 29.853783, y: 2.8201423}
   m_EdgeRadius: 0
 --- !u!114 &1170171983 stripped
 MonoBehaviour:
@@ -359,11 +359,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 15.663546}
-      - {x: -0.01379782, y: 1.397445}
-      - {x: 0.016897745, y: 0.21894038}
-      - {x: 25.349525, y: 0.3096454}
-      - {x: 25.259285, y: 15.788884}
+    - - {x: -2.851832, y: 15.029805}
+      - {x: -2.5940266, y: 1.2616434}
+      - {x: -2.563332, y: 0.21894038}
+      - {x: 26.469055, y: 0.48361754}
+      - {x: 26.46462, y: 15.124069}
   m_UseDelaunayMesh: 0
 --- !u!1 &1506877818
 GameObject:
@@ -5329,11 +5329,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190586484952487521, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.18
+      value: 2.33
       objectReference: {fileID: 0}
     - target: {fileID: 190586484952487521, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.54
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: 190586484952487521, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5552,7 +5552,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 121818692785440286, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_Damping
-      value: 1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 121818692785440286, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_BoundingShape2D
@@ -5560,11 +5560,11 @@ PrefabInstance:
       objectReference: {fileID: 1468533395}
     - target: {fileID: 3813522944287018234, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.693292
+      value: 8.1128845
       objectReference: {fileID: 0}
     - target: {fileID: 3813522944287018234, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.045325
+      value: 7.0668273
       objectReference: {fileID: 0}
     - target: {fileID: 3813522944287018234, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5609,6 +5609,14 @@ PrefabInstance:
     - target: {fileID: 8782589672781400672, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861993010834201773, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.8208847
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861993010834201773, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0468273
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
