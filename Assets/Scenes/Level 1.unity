@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &57052177 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3890582984970596957, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-  m_PrefabInstance: {fileID: 961574271373427531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &290999329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8353664288823412408, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
@@ -3788,33 +3783,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1963020909445375997, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2387580988409794455, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910960461279861601, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 999
-      objectReference: {fileID: 0}
-    - target: {fileID: 5260732139740126489, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: BubbleChat
-      value: 
-      objectReference: {fileID: 57052177}
-    - target: {fileID: 5631443992384816840, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160216734311855862, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9125398729652240571, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Constraints
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3837,6 +3808,10 @@ PrefabInstance:
       propertyPath: NekoUI
       value: 
       objectReference: {fileID: 1170171983}
+    - target: {fileID: 4741224617241942034, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: "\u6700\u5927\u5141\u8BB8\u8DDD\u79BB"
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6094365831748800375, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: m_Name
       value: AblilityController
