@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8117647}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -567,7 +567,6 @@ MonoBehaviour:
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
   mLevelSettings: {fileID: 11400000, guid: 12d7505f830738147aa8f1e221b722a0, type: 2}
-  NekoUI: {fileID: 0}
   Holder: {fileID: 0}
   "\u5269\u4F59\u53EF\u7528\u80FD\u529B\u6B21\u6570": 0
   listIndex: 0

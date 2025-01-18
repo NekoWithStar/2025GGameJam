@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7914033784022789269}
   - component: {fileID: 418461264222136166}
   - component: {fileID: 7300812992861793669}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BubbleChat
   m_TagString: Bubble
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 9125398729652240571}
   - component: {fileID: 4857614560588459550}
   - component: {fileID: 6694463425178193294}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BubbleFixed
   m_TagString: Bubble
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 3748351365495658894}
   - component: {fileID: 4694558367120914252}
   - component: {fileID: 7494144900070184164}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BubbleNormal
   m_TagString: Bubble
   m_Icon: {fileID: 0}
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 8395560462021986706}
   - component: {fileID: 7300511543557966181}
   - component: {fileID: 328578971906293736}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BubbleTele
   m_TagString: Bubble
   m_Icon: {fileID: 0}

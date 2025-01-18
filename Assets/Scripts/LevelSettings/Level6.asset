@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a3fca48ddbedbc418b947da25fcdf16, type: 3}
-  m_Name: Level5
+  m_Name: Level6
   m_EditorClassIdentifier: 
-  "\u5173\u5361\u540D\u79F0": Level5
-  "\u5173\u5361\u5E8F\u53F7": 5
+  "\u5173\u5361\u540D\u79F0": Level6
+  "\u5173\u5361\u5E8F\u53F7": 6
   "\u603B\u53EF\u7528\u80FD\u529B\u6B21\u6570": 10
-  "\u53EF\u7528\u80FD\u529B\u5217\u8868": 0000000003000000
+  "\u53EF\u7528\u80FD\u529B\u5217\u8868": 00000000030000000300000003000000
   "BGM\u540D\u79F0": BGM4
