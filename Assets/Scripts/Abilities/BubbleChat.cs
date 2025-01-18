@@ -9,6 +9,7 @@ public class BubbleChat : MonoBehaviour
     public float lifeTime = 3f;
     private float timer = 3f;
     public bool isRight = true;
+    [SerializeField]
     private bool isEntering = true;
 
     public int maxInput = 100;
@@ -95,6 +96,7 @@ public class BubbleChat : MonoBehaviour
 
     public void Bomb()
     {
+        FindFirstObjectByType<Cinemachine.CinemachineVirtualCamera>().Follow = FindFirstObjectByType<ÒÆ¶¯>().transform;
         animator.SetBool("bomb", true);
         AudioKit.PlaySound("Resources://Audios/Sounds/bubbledie");
         Invoke(nameof(DestroyGameObject), 1.5f);
