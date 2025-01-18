@@ -769,6 +769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8395560462021986706, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1202,6 +1206,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5758930788833083193, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
+      propertyPath: levelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 12d7505f830738147aa8f1e221b722a0, type: 2}
     - target: {fileID: 7610120751011079705, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
       propertyPath: m_Name
       value: NekoUI
