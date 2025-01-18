@@ -1,5 +1,6 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections;
+using QFramework;
 
 public class BubbleChat : MonoBehaviour
 {
@@ -95,7 +96,8 @@ public class BubbleChat : MonoBehaviour
     public void Bomb()
     {
         animator.SetBool("bomb", true);
-        Invoke("DestroyGameObject", 1.5f);
+        AudioKit.PlaySound("Resources://Audios/Sounds/bubbledie");
+        Invoke(nameof(DestroyGameObject), 1.5f);
     }
 
     private void DestroyGameObject()

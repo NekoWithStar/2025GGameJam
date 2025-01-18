@@ -1,3 +1,4 @@
+using QFramework;
 using UnityEngine;
 
 /// <summary>
@@ -114,6 +115,7 @@ public class 移动 : MonoBehaviour
 
             _moveVelocity = Vector2.Lerp(_moveVelocity, 目标速度, 加速度 * Time.fixedDeltaTime);
             _rb.velocity = new Vector2(_moveVelocity.x, _rb.velocity.y);
+            AudioKit.PlaySound("resources://Audios/Sounds/walk");
         }
         else if (moveInput == Vector2.zero)
         {
@@ -229,6 +231,7 @@ public class 移动 : MonoBehaviour
 
     private void InitiateJump(int 已用跳跃次数)
     {
+        AudioKit.PlaySound("resources://Audios/Sounds/jump");
         if (!_jumping)
         {
             _jumping = true;

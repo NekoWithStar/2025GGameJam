@@ -1025,6 +1025,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1045797560 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2799554165160987445, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+  m_PrefabInstance: {fileID: 2427768258757537217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211104225f15df341bae0c8a948ba302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1113011729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7253,6 +7264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kits
       objectReference: {fileID: 0}
+    - target: {fileID: 7915216656422181678, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
+      propertyPath: levelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 18df9563637a486498ba115a1af01d4d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7459,7 +7474,7 @@ PrefabInstance:
     - target: {fileID: 2328289746804651827, guid: dc4926d96ddfb2a4fbfd13ee5f5ee0f8, type: 3}
       propertyPath: Ability
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1045797560}
     - target: {fileID: 2370570819538003532, guid: dc4926d96ddfb2a4fbfd13ee5f5ee0f8, type: 3}
       propertyPath: m_Name
       value: InputManager

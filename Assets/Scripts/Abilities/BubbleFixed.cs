@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using QFramework;
 
 public class BubbleFixed : MonoBehaviour
 {
@@ -37,7 +38,8 @@ public class BubbleFixed : MonoBehaviour
     public void Bomb()
     {
         animator.SetBool("bomb", true);
-        Invoke("DestroyGameObject", 1f);
+        AudioKit.PlaySound("Resources://Audios/Sounds/bubbledie");
+        Invoke(nameof(DestroyGameObject), 1f);
     }
 
     private void DestroyGameObject()

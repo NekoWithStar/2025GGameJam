@@ -1,3 +1,4 @@
+using QFramework;
 using QFramework.Example;
 using UnityEngine;
 
@@ -52,6 +53,7 @@ public class BubbleTele : MonoBehaviour
     }
     public void Bomb()
     {
+        AudioKit.PlaySound("Resources://Audios/Sounds/bubbledie");
         Destroy(gameObject);
     }
 }
