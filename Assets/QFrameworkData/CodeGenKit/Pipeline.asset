@@ -19,35 +19,21 @@ MonoBehaviour:
     From: 0
     NameToFullName: []
     BindInfos:
-    - TypeName: UnityEngine.UI.Image
-      PathToRoot: Image1
-      MemberName: Image1
-    - TypeName: UnityEngine.UI.Image
-      PathToRoot: Image2
-      MemberName: Image2
-    - TypeName: UnityEngine.UI.Image
-      PathToRoot: Image3
-      MemberName: Image3
-    - TypeName: UnityEngine.UI.Image
-      PathToRoot: Image4
-      MemberName: Image4
-    - TypeName: UnityEngine.UI.Text
-      PathToRoot: Count
-      MemberName: Count
+    - TypeName: SpriteRenderer
+      PathToRoot: Circle
+      MemberName: Circle
     ScriptsFolder: Assets/Scripts/UI
-    ClassName: Panel
+    ClassName: CursorKit
     Namespace: QFramework.Example
     MainCode: "using UnityEngine;\r\nusing QFramework;\r\n\r\n// 1.\u8BF7\u5728\u83DC\u5355
       \u7F16\u8F91\u5668\u6269\u5C55/Namespace Settings \u91CC\u8BBE\u7F6E\u547D\u540D\u7A7A\u95F4\r\n//
       2.\u547D\u540D\u7A7A\u95F4\u66F4\u6539\u540E\uFF0C\u751F\u6210\u4EE3\u7801\u4E4B\u540E\uFF0C\u9700\u8981\u628A\u903B\u8F91\u4EE3\u7801\u6587\u4EF6\uFF08\u975E
       Designer\uFF09\u7684\u547D\u540D\u7A7A\u95F4\u624B\u52A8\u66F4\u6539\r\nnamespace
-      QFramework.Example\r\n{\r\n\tpublic partial class Panel : ViewController\r\n\t{\r\n\t\tvoid
+      QFramework.Example\r\n{\r\n\tpublic partial class CursorKit : ViewController\r\n\t{\r\n\t\tvoid
       Start()\r\n\t\t{\r\n\t\t\t// Code Here\r\n\t\t}\r\n\t}\r\n}\r\n"
-    DesignerCode: "// Generate Id:01cac23c-c4d6-45ac-b7ca-61ca66cf6c29\r\nusing UnityEngine;\r\n\r\n//
+    DesignerCode: "// Generate Id:261ed64a-4eaf-4b06-a095-78a46c166b59\r\nusing UnityEngine;\r\n\r\n//
       1.\u8BF7\u5728\u83DC\u5355 \u7F16\u8F91\u5668\u6269\u5C55/Namespace Settings
       \u91CC\u8BBE\u7F6E\u547D\u540D\u7A7A\u95F4\r\n// 2.\u547D\u540D\u7A7A\u95F4\u66F4\u6539\u540E\uFF0C\u751F\u6210\u4EE3\u7801\u4E4B\u540E\uFF0C\u9700\u8981\u628A\u903B\u8F91\u4EE3\u7801\u6587\u4EF6\uFF08\u975E
       Designer\uFF09\u7684\u547D\u540D\u7A7A\u95F4\u624B\u52A8\u66F4\u6539\r\nnamespace
-      QFramework.Example\r\n{\r\n\tpublic partial class Panel\r\n\t{\r\n\r\n\t\tpublic
-      UnityEngine.UI.Image Image1;\r\n\r\n\t\tpublic UnityEngine.UI.Image Image2;\r\n\r\n\t\tpublic
-      UnityEngine.UI.Image Image3;\r\n\r\n\t\tpublic UnityEngine.UI.Image Image4;\r\n\r\n\t\tpublic
-      UnityEngine.UI.Text Count;\r\n\r\n\t}\r\n}\r\n"
+      QFramework.Example\r\n{\r\n\tpublic partial class CursorKit\r\n\t{\r\n\r\n\t\tpublic
+      SpriteRenderer Circle;\r\n\r\n\t}\r\n}\r\n"
