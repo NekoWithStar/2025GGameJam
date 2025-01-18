@@ -13,7 +13,6 @@ public class AbilityController : ViewController
 
     public static bool CanPlace = true;
 
-    public NekoUI NekoUI;
     public AbilityHolder Holder;
 
     public int 剩余可用能力次数;
