@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BubbleNormal : MonoBehaviour
 {
+    Animator animator;
     public float 上升速度 = 1f;
     public Rigidbody2D rb;
     public float lifeTime = 5f;
@@ -12,8 +13,10 @@ public class BubbleNormal : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         leftTime = lifeTime;
+        animator.SetBool("bomb", false);
     }
    
     private void FixedUpdate()
@@ -43,7 +46,13 @@ public class BubbleNormal : MonoBehaviour
 
     public void Bomb()
     {
-        // TODO: 播动画
+        animator.SetTrigger("BubbleNormalBomb");
+        animator.SetBool("bomb", true);
+        Invoke("DestroyGameObject", 1f);
+    }
+
+    private void DestroyGameObject()
+    {
         Destroy(gameObject);
     }
 
