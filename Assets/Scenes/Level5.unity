@@ -17095,6 +17095,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: AblilityController
       objectReference: {fileID: 0}
+    - target: {fileID: 7626665398948490100, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 720513033, guid: 875ea7f0a2a4c2f47b0c057e1f82311e, type: 3}
+    - target: {fileID: 7626665398948490100, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_Color.a
+      value: 0.54509807
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626665398948490100, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626665398948490100, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626665398948490100, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3433962
+      objectReference: {fileID: 0}
     - target: {fileID: 7646724094836502844, guid: 41119f750c01f404f973fbc33e7a0622, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
