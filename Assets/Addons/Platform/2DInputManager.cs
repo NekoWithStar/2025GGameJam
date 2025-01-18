@@ -80,12 +80,24 @@ public class InputManager : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
             }
             #endregion
-        }else if (Input.GetKeyUp(KeyCode.Escape))
+        }
+        else if (Input.GetKeyUp(KeyCode.Escape))
         {
             Time.timeScale = 1;
             IsPaused = false;
         }
+        #region 
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            if (GUILayout.Button("Level 1")) LevelKit.LoadLevel(1);
+            if (GUILayout.Button("Level 2")) LevelKit.LoadLevel(2);
+            if (GUILayout.Button("Level 3")) LevelKit.LoadLevel(3);
+            if (GUILayout.Button("Level 4")) LevelKit.LoadLevel(4);
+            if (GUILayout.Button("Level 5")) LevelKit.LoadLevel(5);
+        }
+        #endregion
+
     }
-    
+
 }
 
