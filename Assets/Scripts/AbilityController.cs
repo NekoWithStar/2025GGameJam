@@ -6,6 +6,8 @@ public class AbilityController : ViewController
 {
     public LevelSettings mLevelSettings;
 
+    public static bool CanPlace;
+
     public NekoUI NekoUI;
     public AbilityHolder Holder;
 
@@ -82,6 +84,11 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
             Transform a = Holder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+            if(!CheckCollision(a))
+            {
+                a.DestroySelf();
+                return;
+            }
             a.transform.gameObject.SetActive(true);
             剩余可用能力次数--;
         }
@@ -94,6 +101,11 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
             Transform a = Holder.BubbleFixed.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+            if (!CheckCollision(a))
+            {
+                Destroy(a.gameObject);
+                return;
+            }
             a.transform.gameObject.SetActive(true);
             剩余可用能力次数--;
         }
@@ -107,7 +119,11 @@ public class AbilityController : ViewController
             localPos.z = 0;
 
             Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
-
+            if (!CheckCollision(a))
+            {
+                Destroy(a.gameObject);
+                return;
+            }
             a.transform.gameObject.SetActive(true);
 
             BubbleChat bubbleChat = a.GetComponent<BubbleChat>();
@@ -129,6 +145,11 @@ public class AbilityController : ViewController
                 Vector3 localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 localPos.z = 0;
                 Transform a = Holder.BubbleTele.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+                if (!CheckCollision(a))
+                {
+                    Destroy(a.gameObject);
+                    return;
+                }
                 tempBubbleTele = a.GetComponent<BubbleTele>();
                 a.transform.gameObject.SetActive(true);
                 剩余可用能力次数--;
@@ -139,11 +160,29 @@ public class AbilityController : ViewController
                 Vector3 localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 localPos.z = 0;
                 Transform a = Holder.BubbleTele.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
+                if (!CheckCollision(a))
+                {
+                    Destroy(a.gameObject);
+                    return;
+                }
                 a.transform.gameObject.SetActive(true);
                 a.GetComponent<BubbleTele>().pairBubble = tempBubbleTele;
                 tempBubbleTele.pairBubble = a.GetComponent<BubbleTele>();
                 剩余可用能力次数--;
             }
         }
+    }
+
+    public bool CheckCollision(Transform bubble)
+    {
+        AbilityController.CanPlace = true;
+        bubble.OnCollisionEnter2DEvent(e =>
+        {
+            if (!e.transform.gameObject.CompareTag("Player"))
+            {
+                AbilityController.CanPlace = false;
+            }
+        });
+        return CanPlace;
     }
 }
