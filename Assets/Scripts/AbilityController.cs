@@ -39,6 +39,7 @@ public class AbilityController : ViewController
     public void Update()
     {
         修正选中能力();
+        CheckDistance();
         if (剩余可用能力次数 > 0 && 是否在范围内)
         {
             上升泡泡();
@@ -50,6 +51,8 @@ public class AbilityController : ViewController
     public void CheckDistance()
     {
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0;
+        Debug.Log(playerBody.position);
         是否在范围内 = Vector3.Distance(mousePos, playerBody.position) < 最大允许距离;
     }
 
