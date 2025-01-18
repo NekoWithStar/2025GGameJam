@@ -12,6 +12,7 @@ namespace QFramework.Example
 		void Start()
 		{
 			animator = GetComponent<Animator>();
+            animator.SetBool("IsDead", false);
 		}
         private void OnCollisionEnter2D(Collision2D collision)
         {
