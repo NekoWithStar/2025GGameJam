@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BubbleFixed : MonoBehaviour
 {
+    Animator animator;
     public Rigidbody2D rb;
     public float lifeTime = 3f;
     private float timer = 3f;
@@ -11,8 +12,10 @@ public class BubbleFixed : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         timer = lifeTime;
         rb = GetComponent<Rigidbody2D>();
+        animator.SetBool("bomb", false);
     }
 
     private void FixedUpdate()
@@ -33,7 +36,13 @@ public class BubbleFixed : MonoBehaviour
     }
     public void Bomb()
     {
-        
+        animator.SetTrigger("BubbleFixedBomb");
+        animator.SetBool("bomb", true);
+        Invoke("DestroyGameObject", 1f);
+    }
+
+    private void DestroyGameObject()
+    {
         Destroy(gameObject);
     }
 
