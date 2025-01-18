@@ -2,6 +2,7 @@ using QFramework;
 using QFramework.Example;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +17,8 @@ public class AbilityController : ViewController
     public AbilityHolder Holder;
 
     public int 剩余可用能力次数;
-    public int 选中能力;
+    public int listIndex;
+    public int 选择能力key ;
 
     public float 最大允许距离;
     public bool 是否在范围内;
@@ -35,6 +37,7 @@ public class AbilityController : ViewController
     public void Awake()
     {
         剩余可用能力次数 = mLevelSettings.总可用能力次数;
+        选择能力key = (int)mLevelSettings.可用能力列表[0];
     }
 
     private void Start()
@@ -72,9 +75,11 @@ public class AbilityController : ViewController
         }
         for (int i = 0; i < mLevelSettings.可用能力列表.Count; i++)
         {
-            panel_images[i].sprite = unlocked_sprites[i];
+            int gkey = (int)mLevelSettings.可用能力列表[i];
+            panel_images[i].sprite = unlocked_sprites[gkey];
         }
-        panel_images[选中能力].sprite = selected_sprites[选中能力];
+        int mkey = (int)mLevelSettings.可用能力列表[listIndex];
+        panel_images[listIndex].sprite = selected_sprites[mkey];
     }
 
     public void CheckDistance()
@@ -86,23 +91,27 @@ public class AbilityController : ViewController
 
     public void 修正选中能力()
     {
-        if (选中能力 < 0)
+        if (listIndex < 0)
         {
-            选中能力 = mLevelSettings.可用能力列表.Count - 1;
+            listIndex = mLevelSettings.可用能力列表.Count - 1;
         }
-        else if (选中能力 > mLevelSettings.可用能力列表.Count - 1)
+        else if (listIndex > mLevelSettings.可用能力列表.Count - 1)
         {
-            选中能力 = 0;
+            listIndex = 0;
         }
         if (LockSwitch)
         {
-            选中能力 = (int)可用能力.传送泡泡;
+            int index = mLevelSettings.可用能力列表.FindIndex(ability => (int)ability == 4);
+            if (index != -1)
+            {
+                listIndex = index;
+            }
         }
     }
 
     public void 上升泡泡()
     {
-        if (选中能力 == (int)可用能力.上升泡泡 && Input.GetMouseButtonDown(0))
+        if (选择能力key == (int)可用能力.上升泡泡 && Input.GetMouseButtonDown(0))
         {
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
@@ -118,7 +127,7 @@ public class AbilityController : ViewController
 
     public void 固定泡泡()
     {
-        if (选中能力 == (int)可用能力.固定泡泡 && Input.GetMouseButtonDown(0))
+        if (选择能力key == (int)可用能力.固定泡泡 && Input.GetMouseButtonDown(0))
         {
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
@@ -134,7 +143,7 @@ public class AbilityController : ViewController
 
     public void 聊天泡泡()
     {
-        if (选中能力 == (int)可用能力.聊天泡泡 && Input.GetMouseButtonDown(0))
+        if (选择能力key == (int)可用能力.聊天泡泡 && Input.GetMouseButtonDown(0))
         {
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
@@ -157,7 +166,7 @@ public class AbilityController : ViewController
 
     public void 传送泡泡()
     {
-        if (选中能力 == (int)可用能力.传送泡泡 && Input.GetMouseButtonDown(0))
+        if (选择能力key == (int)可用能力.传送泡泡 && Input.GetMouseButtonDown(0))
         {
             if (!LockSwitch)
             {
@@ -186,7 +195,6 @@ public class AbilityController : ViewController
                 a.transform.gameObject.SetActive(true);
                 a.GetComponent<BubbleTele>().pairBubble = tempBubbleTele;
                 tempBubbleTele.pairBubble = a.GetComponent<BubbleTele>();
-                剩余可用能力次数--;
             }
         }
     }

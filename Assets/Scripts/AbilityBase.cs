@@ -11,7 +11,7 @@ public enum 可用能力
 
 public class AbilityBase : MonoBehaviour
 {
-    public static Dictionary<int, string> 能力表 = new Dictionary<int, string>
+    public static Dictionary<int, string> 所有能力表 = new Dictionary<int, string>
     {
         { 0, "上升泡泡" },
         { 1, "固定泡泡" },

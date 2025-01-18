@@ -50,14 +50,14 @@ public class InputManager : MonoBehaviour
         #region 能力选择
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Ability.选中能力 = 0;
+            Ability.listIndex = 0;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Ability.选中能力 = 1;
+            Ability.listIndex = 1;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3)) { Ability .选中能力= 2; }
-        if (Input.GetKeyDown(KeyCode.Alpha4)) { Ability .选中能力= 3; } 
+        if (Input.GetKeyDown(KeyCode.Alpha3)) { Ability .listIndex= 2; }
+        if (Input.GetKeyDown(KeyCode.Alpha4)) { Ability .listIndex= 3; } 
 
         if(Input.GetKeyUp(KeyCode.R))
         {

@@ -11,6 +11,7 @@ public class BubbleTele : MonoBehaviour
     private float timer = 3f;
 
     private bool bomb = false;
+    private float lateTime = 1.5f;
 
     private void Start()
     {
@@ -37,6 +38,7 @@ public class BubbleTele : MonoBehaviour
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
+        Debug.Log(collision.transform.name);
         if (collision.transform.CompareTag("Player") && pairBubble != null && !locked)
         {
             locked = true;
@@ -48,8 +50,13 @@ public class BubbleTele : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player") && locked)
         {
-            locked = false;
+            Invoke(nameof(UnLock), lateTime);
         }
+    }
+
+    public void UnLock()
+    {
+        locked = false;
     }
     public void Bomb()
     {
