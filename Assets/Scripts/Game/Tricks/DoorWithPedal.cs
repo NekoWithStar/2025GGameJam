@@ -5,7 +5,7 @@ namespace QFramework.Example
     public partial class DoorWithPedal : ViewController
     {
         public bool canMove = true;
-        public float moveTime = 0.5f; // 移动时间
+        public float moveTime = 0.2f; // 移动时间
         public float distance = 5f;   // 移动距离
 
         [SerializeField]
