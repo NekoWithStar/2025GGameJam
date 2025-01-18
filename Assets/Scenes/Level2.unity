@@ -7058,6 +7058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NekoUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7915216656422181678, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
+      propertyPath: levelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 18df9563637a486498ba115a1af01d4d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7081,11 +7085,11 @@ PrefabInstance:
       objectReference: {fileID: 1468533395}
     - target: {fileID: 3813522944287018234, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.977347
+      value: 6.971647
       objectReference: {fileID: 0}
     - target: {fileID: 3813522944287018234, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.610428
+      value: 6.3286724
       objectReference: {fileID: 0}
     - target: {fileID: 3813522944287018234, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7133,11 +7137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861993010834201773, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.655347
+      value: -8.649647
       objectReference: {fileID: 0}
     - target: {fileID: 8861993010834201773, guid: 4910f4926576f1b45aa6e66a10a9edc4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9004278
+      value: -2.6186724
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -46,7 +46,6 @@ public class BubbleNormal : MonoBehaviour
 
     public void Bomb()
     {
-        animator.SetTrigger("BubbleNormalBomb");
         animator.SetBool("bomb", true);
         Invoke("DestroyGameObject", 1f);
     }

@@ -19,11 +19,10 @@ namespace QFramework.Example
             if (collision.gameObject.CompareTag("Spike"))
             {
                 animator.SetBool("IsDead", true);
-                Die();
+                StartCoroutine(Die());
             }
         }
-
-        IEnumerator Die()
+        private IEnumerator Die()
         {
             yield return new WaitForSeconds(1f);
             UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);

@@ -6562,6 +6562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NekoUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7915216656422181678, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
+      propertyPath: levelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 66a84dc53ab6db841aa4be0685b9eef3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
