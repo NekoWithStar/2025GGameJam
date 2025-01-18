@@ -181,6 +181,7 @@ public class AbilityController : ViewController
                 }
                 tempBubbleTele = a.GetComponent<BubbleTele>();
                 a.transform.gameObject.SetActive(true);
+                剩余可用能力次数--;
             }
             else
             {
