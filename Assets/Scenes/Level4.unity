@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 244461199}
   - component: {fileID: 244461201}
   - component: {fileID: 244461200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 340699236}
   - component: {fileID: 340699237}
   - component: {fileID: 340699238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1338,7 +1338,7 @@ GameObject:
   - component: {fileID: 515711178}
   - component: {fileID: 515711179}
   - component: {fileID: 515711180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1468,7 +1468,7 @@ GameObject:
   - component: {fileID: 542150404}
   - component: {fileID: 542150406}
   - component: {fileID: 542150405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1787,7 +1787,7 @@ GameObject:
   - component: {fileID: 915465191}
   - component: {fileID: 915465192}
   - component: {fileID: 915465193}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2131,7 +2131,7 @@ GameObject:
   - component: {fileID: 1053608264}
   - component: {fileID: 1053608265}
   - component: {fileID: 1053608266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2323,7 +2323,7 @@ GameObject:
   - component: {fileID: 1121686089}
   - component: {fileID: 1121686090}
   - component: {fileID: 1121686091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2464,7 +2464,7 @@ GameObject:
   - component: {fileID: 1180913588}
   - component: {fileID: 1180913589}
   - component: {fileID: 1180913590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2786,7 +2786,7 @@ GameObject:
   - component: {fileID: 1270117355}
   - component: {fileID: 1270117356}
   - component: {fileID: 1270117357}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3046,7 +3046,7 @@ GameObject:
   - component: {fileID: 1443879760}
   - component: {fileID: 1443879761}
   - component: {fileID: 1443879762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12024,7 +12024,7 @@ GameObject:
   - component: {fileID: 1515270539}
   - component: {fileID: 1515270541}
   - component: {fileID: 1515270540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12154,7 +12154,7 @@ GameObject:
   - component: {fileID: 1576989788}
   - component: {fileID: 1576989789}
   - component: {fileID: 1576989790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12284,7 +12284,7 @@ GameObject:
   - component: {fileID: 1595962190}
   - component: {fileID: 1595962191}
   - component: {fileID: 1595962192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12619,7 +12619,7 @@ GameObject:
   - component: {fileID: 1847473309}
   - component: {fileID: 1847473310}
   - component: {fileID: 1847473311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12811,7 +12811,7 @@ GameObject:
   - component: {fileID: 1873096248}
   - component: {fileID: 1873096250}
   - component: {fileID: 1873096249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
