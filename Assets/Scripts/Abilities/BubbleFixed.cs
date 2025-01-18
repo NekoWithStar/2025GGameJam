@@ -8,14 +8,9 @@ public class BubbleFixed : MonoBehaviour
     private float timer = 3f;
 
     private bool bomb = false;
-    private void Awake()
-    {
-        enabled = false;
-    }
 
     private void Start()
     {
-        enabled = true;
         timer = lifeTime;
         rb = GetComponent<Rigidbody2D>();
     }

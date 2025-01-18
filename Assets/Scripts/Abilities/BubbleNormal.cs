@@ -9,10 +9,6 @@ public class BubbleNormal : MonoBehaviour
 
 
     private bool bomb = false;
-    private void Awake()
-    {
-        enabled = false;
-    }
 
     private void Start()
     {

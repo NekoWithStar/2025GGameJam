@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   lifeTime: 3
-  direction: {x: 0, y: 0}
+  isRight: 1
   maxInput: 100
   maxLength: 5
 --- !u!114 &6383823914703251070
@@ -404,7 +404,7 @@ Transform:
   m_GameObject: {fileID: 3102293178755929279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0134, y: -0.386, z: 0}
+  m_LocalPosition: {x: -0.0092, y: -0.4041, z: 0}
   m_LocalScale: {x: 0.9732, y: 0.2166, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1025,4 +1025,4 @@ MonoBehaviour:
   ViewControllerFullTypeName: 
   BubbleNormal: {fileID: 3166416389305922178}
   BubbleFixed: {fileID: 6704986865400593836}
-  BubbleChat: {fileID: 0}
+  BubbleChat: {fileID: 3890582984970596957}

@@ -16,11 +16,6 @@ public class BubbleChat : MonoBehaviour
 
     private bool bomb = false;
 
-    private void Awake()
-    {
-        enabled = false;
-    }
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
