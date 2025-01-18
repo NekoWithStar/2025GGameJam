@@ -69,7 +69,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.0037724972, y: 0.007545233}
   serializedVersion: 2
-  m_Radius: 1.0319457
+  m_Radius: 1
 --- !u!114 &7970251264159499324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,11 +105,12 @@ MonoBehaviour:
   PrefabFolder: Assets/Art/Prefab
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
-  "\u5141\u8BB8\u521B\u5EFA": {r: 0.15535784, g: 1, b: 0, a: 1}
-  "\u4E0D\u53EF\u521B\u5EFA": {r: 0.79622644, g: 0.24885619, b: 0, a: 1}
+  "\u5141\u8BB8\u521B\u5EFA": {r: 0.15535784, g: 1, b: 0, a: 0.39215687}
+  "\u4E0D\u53EF\u521B\u5EFA": {r: 0.79622644, g: 0.24885619, b: 0, a: 0.39215687}
   layerGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  radius: 1
   Circle: {fileID: 5184297076064414521}
 --- !u!1 &2839473833920365212
 GameObject:

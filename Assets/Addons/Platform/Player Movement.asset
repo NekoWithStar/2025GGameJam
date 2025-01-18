@@ -20,7 +20,7 @@ MonoBehaviour:
   "\u6700\u5927\u8DD1\u6B65\u901F\u5EA6": 20
   "\u5730\u9762\u5C42":
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   "\u5730\u9762\u5C04\u7EBF\u957F\u5EA6": 0.02
   "\u9876\u90E8\u5C04\u7EBF\u957F\u5EA6": 0.02
   "\u9876\u90E8\u5BBD\u5EA6": 0.75

@@ -572,8 +572,7 @@ MonoBehaviour:
   "\u5269\u4F59\u53EF\u7528\u80FD\u529B\u6B21\u6570": 0
   listIndex: 0
   "\u9009\u62E9\u80FD\u529Bkey": 0
-  "\u6700\u5927\u5141\u8BB8\u8DDD\u79BB": 10
-  "\u662F\u5426\u5728\u8303\u56F4\u5185": 0
+  "\u6700\u5927\u5141\u8BB8\u8DDD\u79BB": 6
   LockSwitch: 0
   panel: {fileID: 4871832052313591919}
   unlocked_sprites:

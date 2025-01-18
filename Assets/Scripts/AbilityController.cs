@@ -21,7 +21,7 @@ public class AbilityController : ViewController
     public int 选择能力key ;
 
     public float 最大允许距离;
-    public bool 是否在范围内;
+    public static bool 是否在范围内;
     public bool LockSwitch;
     private Player mPlayer;
     private Transform playerBody;

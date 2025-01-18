@@ -1,21 +1,28 @@
 using UnityEngine;
 using QFramework;
+using static UnityEditor.PlayerSettings;
 
-// 1.请在菜单 编辑器扩展/Namespace Settings 里设置命名空间
-// 2.命名空间更改后，生成代码之后，需要把逻辑代码文件（非 Designer）的命名空间手动更改
 namespace QFramework.Example
 {
-	public partial class CursorKit : ViewController
-	{
+    public partial class CursorKit : ViewController
+    {
         public Color 允许创建;
         public Color 不可创建;
         public LayerMask layerGround;
+        public float radius = 5f;
 
         private void Update()
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(pos.x, pos.y, 0);
-            if (AbilityController.CanPlace)
+
+            // 使用 Physics2D.OverlapCircleAll 检测碰撞
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(new Vector2(pos.x, pos.y), radius, layerGround);
+            // 检查是否包含 layerGround
+            AbilityController.CanPlace = colliders.Length == 0;
+
+            // 更新颜色
+            if (AbilityController.CanPlace && AbilityController.是否在范围内)
             {
                 Circle.color = 允许创建;
             }
@@ -25,24 +32,14 @@ namespace QFramework.Example
             }
         }
 
-        private void OnTriggerStay2D(Collider2D collision)
+        private void OnDrawGizmos()
         {
-            if (collision.gameObject.layer == 6)
-            {
-                AbilityController.CanPlace = false;
-            }
-            else
-            {
-                AbilityController.CanPlace = true;
-            }
-        }
+            Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            // 设置 Gizmos 颜色
+            Gizmos.color = AbilityController.CanPlace ? 允许创建 : 不可创建;
 
-        private void OnTriggerExit2D(Collider2D collision)
-        {
-            if (collision.gameObject.layer == 6)
-            {
-                AbilityController.CanPlace = true;
-            }
+            // 绘制圆形范围
+            Gizmos.DrawWireSphere(pos, radius);
         }
     }
 }
