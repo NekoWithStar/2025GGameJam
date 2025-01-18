@@ -133,7 +133,8 @@ GameObject:
   - component: {fileID: 152399147}
   - component: {fileID: 152399146}
   - component: {fileID: 152399148}
-  m_Layer: 0
+  - component: {fileID: 152399149}
+  m_Layer: 6
   m_Name: Boxs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,28 +201,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152399145}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.11330251, w: 0.99356055}
-  m_LocalPosition: {x: 4.5, y: 2.83, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1576989788}
-  - {fileID: 1121686089}
-  - {fileID: 515711178}
-  - {fileID: 1180913588}
-  - {fileID: 1847473309}
-  - {fileID: 1515270539}
-  - {fileID: 244461199}
-  - {fileID: 1873096248}
-  - {fileID: 542150404}
-  - {fileID: 1595962190}
-  - {fileID: 1053608264}
-  - {fileID: 1443879760}
-  - {fileID: 915465191}
-  - {fileID: 340699236}
-  - {fileID: 1270117355}
-  - {fileID: 1425445179}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.011}
 --- !u!61 &152399148
 BoxCollider2D:
@@ -268,6 +253,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &152399149
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152399145}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &161813602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,7 +353,8 @@ GameObject:
   - component: {fileID: 191432451}
   - component: {fileID: 191432450}
   - component: {fileID: 191432449}
-  m_Layer: 0
+  - component: {fileID: 191432452}
+  m_Layer: 6
   m_Name: "\u7A7A\u6C14\u5899 (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,13 +466,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191432448}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.21, y: 5.72, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.46, y: 5.5899997, z: 0}
   m_LocalScale: {x: 1, y: 30.58, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &191432452
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191432448}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &195360181
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +511,8 @@ GameObject:
   - component: {fileID: 195360183}
   - component: {fileID: 195360182}
   - component: {fileID: 195360184}
-  m_Layer: 0
+  - component: {fileID: 195360185}
+  m_Layer: 6
   m_Name: "\u7A7A\u6C14\u5899"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,12 +579,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195360181}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.32, y: 4.29, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 50.07, y: 4.16, z: 0}
   m_LocalScale: {x: 1, y: 30.58, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &195360184
 BoxCollider2D:
@@ -590,6 +631,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &195360185
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195360181}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &243941634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -663,6 +731,7 @@ GameObject:
   - component: {fileID: 244461199}
   - component: {fileID: 244461201}
   - component: {fileID: 244461200}
+  - component: {fileID: 244461202}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (14)
   m_TagString: Untagged
@@ -678,12 +747,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244461198}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.17681652, w: 0.98424387}
+  m_LocalRotation: {x: -0, y: -0, z: 0.17681652, w: 0.9842438}
   m_LocalPosition: {x: -5.02, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.369}
 --- !u!61 &244461200
 BoxCollider2D:
@@ -782,6 +851,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &244461202
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244461198}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &247424612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -854,6 +950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275129056}
   - component: {fileID: 275129057}
+  - component: {fileID: 275129058}
   m_Layer: 6
   m_Name: Collider (1)
   m_TagString: Untagged
@@ -870,11 +967,11 @@ Transform:
   m_GameObject: {fileID: 275129055}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.28, y: -0.16, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 47.357998, y: -0.306, z: 0}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 785306365}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &275129057
 BoxCollider2D:
@@ -921,6 +1018,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 29.853783, y: 2.8201423}
   m_EdgeRadius: 0
+--- !u!50 &275129058
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275129055}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!4 &290999329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8353664288823412408, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
@@ -1067,6 +1191,7 @@ GameObject:
   - component: {fileID: 340699236}
   - component: {fileID: 340699237}
   - component: {fileID: 340699238}
+  - component: {fileID: 340699239}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (10)
   m_TagString: Untagged
@@ -1083,11 +1208,11 @@ Transform:
   m_GameObject: {fileID: 340699235}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -7.76, y: -1.9, z: 0}
+  m_LocalPosition: {x: -7.7599998, y: -1.8999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &340699237
 SpriteRenderer:
@@ -1186,6 +1311,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &340699239
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340699235}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!114 &455534660 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5260732139740126489, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
@@ -1208,6 +1360,7 @@ GameObject:
   - component: {fileID: 471389058}
   - component: {fileID: 471389057}
   - component: {fileID: 471389059}
+  - component: {fileID: 471389060}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -1327,6 +1480,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &471389060
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471389056}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &515711177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,6 +1518,7 @@ GameObject:
   - component: {fileID: 515711178}
   - component: {fileID: 515711179}
   - component: {fileID: 515711180}
+  - component: {fileID: 515711181}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (3)
   m_TagString: Untagged
@@ -1354,11 +1535,11 @@ Transform:
   m_GameObject: {fileID: 515711177}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.14865136, w: 0.9888897}
-  m_LocalPosition: {x: -0.97, y: 2.27, z: 0}
+  m_LocalPosition: {x: -0.9699999, y: 2.2699995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.086}
 --- !u!212 &515711179
 SpriteRenderer:
@@ -1457,6 +1638,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &515711181
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515711177}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &542150403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,6 +1676,7 @@ GameObject:
   - component: {fileID: 542150404}
   - component: {fileID: 542150406}
   - component: {fileID: 542150405}
+  - component: {fileID: 542150407}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (16)
   m_TagString: Untagged
@@ -1488,7 +1697,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.261}
 --- !u!61 &542150405
 BoxCollider2D:
@@ -1587,6 +1796,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &542150407
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542150403}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!114 &654158328 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 168675150536714578, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
@@ -1683,8 +1919,6 @@ Transform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 802658375}
-  - {fileID: 275129056}
   - {fileID: 1506877819}
   - {fileID: 1959862682}
   m_Father: {fileID: 0}
@@ -1710,6 +1944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 802658375}
   - component: {fileID: 802658376}
+  - component: {fileID: 802658377}
   m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
@@ -1726,11 +1961,11 @@ Transform:
   m_GameObject: {fileID: 802658374}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.25, y: -0.13, z: 0}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 785306365}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &802658376
 BoxCollider2D:
@@ -1777,6 +2012,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 29.853783, y: 2.8201423}
   m_EdgeRadius: 0
+--- !u!50 &802658377
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802658374}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &915465190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,6 +2050,7 @@ GameObject:
   - component: {fileID: 915465191}
   - component: {fileID: 915465192}
   - component: {fileID: 915465193}
+  - component: {fileID: 915465194}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (9)
   m_TagString: Untagged
@@ -1804,11 +2067,11 @@ Transform:
   m_GameObject: {fileID: 915465190}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -7.92, y: -1.18, z: 0}
+  m_LocalPosition: {x: -7.92, y: -1.1800001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &915465192
 SpriteRenderer:
@@ -1907,6 +2170,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &915465194
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915465190}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &934563659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,7 +2212,7 @@ GameObject:
   - component: {fileID: 934563662}
   - component: {fileID: 934563661}
   - component: {fileID: 934563660}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: A
   m_TagString: Bubble
   m_Icon: {fileID: 0}
@@ -2132,6 +2422,7 @@ GameObject:
   - component: {fileID: 1053608264}
   - component: {fileID: 1053608265}
   - component: {fileID: 1053608266}
+  - component: {fileID: 1053608267}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (7)
   m_TagString: Untagged
@@ -2148,11 +2439,11 @@ Transform:
   m_GameObject: {fileID: 1053608263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -7.71, y: 0.72, z: 0}
+  m_LocalPosition: {x: -7.7099996, y: 0.72000027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1053608265
 SpriteRenderer:
@@ -2251,6 +2542,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1053608267
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053608263}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1068943035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2726,7 @@ GameObject:
   - component: {fileID: 1121686089}
   - component: {fileID: 1121686090}
   - component: {fileID: 1121686091}
+  - component: {fileID: 1121686092}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (2)
   m_TagString: Untagged
@@ -2424,11 +2743,11 @@ Transform:
   m_GameObject: {fileID: 1121686088}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.14865136, w: 0.9888897}
-  m_LocalPosition: {x: -0.13, y: 1.79, z: 0}
+  m_LocalPosition: {x: -0.13000008, y: 1.7899997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.086}
 --- !u!212 &1121686090
 SpriteRenderer:
@@ -2527,6 +2846,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1121686092
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121686088}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!114 &1170171983 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8377836044537252346, guid: 08981a4d768ea724fa55f656c5eee13f, type: 3}
@@ -2549,6 +2895,7 @@ GameObject:
   - component: {fileID: 1180913588}
   - component: {fileID: 1180913589}
   - component: {fileID: 1180913590}
+  - component: {fileID: 1180913591}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (4)
   m_TagString: Untagged
@@ -2565,11 +2912,11 @@ Transform:
   m_GameObject: {fileID: 1180913587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -1.94, y: 2.51, z: 0}
+  m_LocalPosition: {x: -1.9399999, y: 2.5099998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1180913589
 SpriteRenderer:
@@ -2668,6 +3015,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1180913591
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180913587}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &1243101145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2741,7 +3115,8 @@ GameObject:
   - component: {fileID: 1252369244}
   - component: {fileID: 1252369243}
   - component: {fileID: 1252369242}
-  m_Layer: 0
+  - component: {fileID: 1252369245}
+  m_Layer: 6
   m_Name: "\u7A7A\u6C14\u5899 (2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2853,13 +3228,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252369241}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.7863, y: 8.6715, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.5363, y: 8.5415, z: 0}
   m_LocalScale: {x: 13.065525, y: 13.0533085, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1252369245
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252369241}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1270117354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,6 +3273,7 @@ GameObject:
   - component: {fileID: 1270117355}
   - component: {fileID: 1270117356}
   - component: {fileID: 1270117357}
+  - component: {fileID: 1270117358}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (11)
   m_TagString: Untagged
@@ -2891,7 +3294,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1270117356
 SpriteRenderer:
@@ -2990,6 +3393,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1270117358
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270117354}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1316641368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,12 +3497,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316641368}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.763428, y: 2.785, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.513428, y: 2.6550002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425445178
 GameObject:
@@ -3085,7 +3515,8 @@ GameObject:
   - component: {fileID: 1425445179}
   - component: {fileID: 1425445180}
   - component: {fileID: 1425445181}
-  m_Layer: 0
+  - component: {fileID: 1425445182}
+  m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3101,11 +3532,11 @@ Transform:
   m_GameObject: {fileID: 1425445178}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -7.25, y: 1.03, z: 0}
+  m_LocalPosition: {x: -7.2500005, y: 1.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1425445180
 SpriteRenderer:
@@ -3204,6 +3635,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1425445182
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425445178}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1443879759
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3673,7 @@ GameObject:
   - component: {fileID: 1443879760}
   - component: {fileID: 1443879761}
   - component: {fileID: 1443879762}
+  - component: {fileID: 1443879763}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (8)
   m_TagString: Untagged
@@ -3231,11 +3690,11 @@ Transform:
   m_GameObject: {fileID: 1443879759}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -7.86, y: -0.01, z: 0}
+  m_LocalPosition: {x: -7.8600006, y: -0.009999905, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1443879761
 SpriteRenderer:
@@ -3334,6 +3793,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1443879763
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443879759}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1468533393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,7 +3849,14 @@ Transform:
   m_LocalPosition: {x: 0.25, y: 0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1904970418}
+  - {fileID: 1316641370}
+  - {fileID: 195360183}
+  - {fileID: 191432451}
+  - {fileID: 1252369244}
+  - {fileID: 802658375}
+  - {fileID: 275129056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1468533395
@@ -3493,7 +3986,7 @@ GameObject:
   - component: {fileID: 1502510515}
   - component: {fileID: 1502510514}
   - component: {fileID: 1502510513}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: B
   m_TagString: Bubble
   m_Icon: {fileID: 0}
@@ -12203,6 +12696,7 @@ GameObject:
   - component: {fileID: 1515270539}
   - component: {fileID: 1515270541}
   - component: {fileID: 1515270540}
+  - component: {fileID: 1515270542}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (13)
   m_TagString: Untagged
@@ -12219,11 +12713,11 @@ Transform:
   m_GameObject: {fileID: 1515270538}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -5.79, y: 1.94, z: 0}
+  m_LocalPosition: {x: -5.79, y: 1.9399999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!61 &1515270540
 BoxCollider2D:
@@ -12322,6 +12816,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1515270542
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515270538}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1576989787
 GameObject:
   m_ObjectHideFlags: 0
@@ -12333,6 +12854,7 @@ GameObject:
   - component: {fileID: 1576989788}
   - component: {fileID: 1576989789}
   - component: {fileID: 1576989790}
+  - component: {fileID: 1576989791}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (1)
   m_TagString: Untagged
@@ -12349,11 +12871,11 @@ Transform:
   m_GameObject: {fileID: 1576989787}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.14865136, w: 0.9888897}
-  m_LocalPosition: {x: 0.3, y: 1.07, z: 0}
+  m_LocalPosition: {x: 0.30000007, y: 1.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.086}
 --- !u!212 &1576989789
 SpriteRenderer:
@@ -12452,6 +12974,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1576989791
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576989787}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1595962189
 GameObject:
   m_ObjectHideFlags: 0
@@ -12463,6 +13012,7 @@ GameObject:
   - component: {fileID: 1595962190}
   - component: {fileID: 1595962191}
   - component: {fileID: 1595962192}
+  - component: {fileID: 1595962193}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (6)
   m_TagString: Untagged
@@ -12479,11 +13029,11 @@ Transform:
   m_GameObject: {fileID: 1595962189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06918101, w: 0.99760413}
-  m_LocalPosition: {x: -6.59, y: 1.3, z: 0}
+  m_LocalPosition: {x: -6.5900006, y: 1.3000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1595962191
 SpriteRenderer:
@@ -12582,6 +13132,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1595962193
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595962189}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &1709477584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12802,6 +13379,7 @@ GameObject:
   - component: {fileID: 1847473309}
   - component: {fileID: 1847473310}
   - component: {fileID: 1847473311}
+  - component: {fileID: 1847473312}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (5)
   m_TagString: Untagged
@@ -12822,7 +13400,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.078}
 --- !u!212 &1847473310
 SpriteRenderer:
@@ -12921,6 +13499,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1847473312
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847473308}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &1858722351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12994,6 +13599,7 @@ GameObject:
   - component: {fileID: 1873096248}
   - component: {fileID: 1873096250}
   - component: {fileID: 1873096249}
+  - component: {fileID: 1873096251}
   m_Layer: 6
   m_Name: BG_Bath01_ClothBox_8 (15)
   m_TagString: Untagged
@@ -13009,12 +13615,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873096247}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.17681652, w: 0.98424387}
+  m_LocalRotation: {x: -0, y: -0, z: 0.17681652, w: 0.9842438}
   m_LocalPosition: {x: -4.41, y: 2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 152399147}
+  m_Father: {fileID: 2121884797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.369}
 --- !u!61 &1873096249
 BoxCollider2D:
@@ -13113,6 +13719,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1873096251
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873096247}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1904970416
 GameObject:
   m_ObjectHideFlags: 0
@@ -13190,12 +13823,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904970416}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.96, y: 2.89, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.71, y: 2.7600002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1468533394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1918760579
 PrefabInstance:
@@ -14469,6 +15102,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 732859902349105835, guid: 896ded0aba137434bad792693a3f4f99, type: 3}
   m_PrefabInstance: {fileID: 1970761875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2028108165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 40496551077127724, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_Name
+      value: CursorKit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.992735
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4754415
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.051869165
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158970986990680373, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a2e42970e5e9764c8980f2526d2c483, type: 3}
+--- !u!1 &2121884796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121884797}
+  m_Layer: 0
+  m_Name: Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121884797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121884796}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.11330251, w: 0.99356055}
+  m_LocalPosition: {x: 4.5, y: 2.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 152399147}
+  - {fileID: 1576989788}
+  - {fileID: 1121686089}
+  - {fileID: 515711178}
+  - {fileID: 1180913588}
+  - {fileID: 1847473309}
+  - {fileID: 1515270539}
+  - {fileID: 244461199}
+  - {fileID: 1873096248}
+  - {fileID: 542150404}
+  - {fileID: 1595962190}
+  - {fileID: 1053608264}
+  - {fileID: 1443879760}
+  - {fileID: 915465191}
+  - {fileID: 340699236}
+  - {fileID: 1270117355}
+  - {fileID: 1425445179}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &961574271373427531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14996,6 +15734,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2028108165}
   - {fileID: 934563666}
   - {fileID: 1502510519}
   - {fileID: 1804544850}
@@ -15006,13 +15745,8 @@ SceneRoots:
   - {fileID: 1468533394}
   - {fileID: 2427768258757537217}
   - {fileID: 785306365}
-  - {fileID: 195360183}
-  - {fileID: 191432451}
-  - {fileID: 1252369244}
   - {fileID: 339983374}
   - {fileID: 471389058}
   - {fileID: 667889923}
-  - {fileID: 152399147}
-  - {fileID: 1904970418}
-  - {fileID: 1316641370}
+  - {fileID: 2121884797}
   - {fileID: 1068943037}
