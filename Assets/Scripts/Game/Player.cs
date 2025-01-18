@@ -24,7 +24,7 @@ namespace QFramework.Example
         }
         private IEnumerator Die()
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.3f);
             UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         }
     }
