@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6383823914703251070}
   - component: {fileID: 7914033784022789269}
   - component: {fileID: 3629355868977212364}
+  - component: {fileID: 418461264222136166}
   m_Layer: 6
   m_Name: BubbleChat
   m_TagString: Bubble
@@ -104,7 +105,7 @@ MonoBehaviour:
   lifeTime: 3
   isRight: 1
   maxInput: 100
-  maxLength: 10
+  maxLength: 8
 --- !u!114 &6383823914703251070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +197,27 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!95 &418461264222136166
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963020909445375997}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5ce5a67ce5585d41b46c417eafc104c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2387580988409794455
 GameObject:
   m_ObjectHideFlags: 0

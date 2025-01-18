@@ -71,7 +71,7 @@ public class AbilityController : ViewController
         {
             选中能力 = 0;
         }
-        if(LockSwitch)
+        if (LockSwitch)
         {
             选中能力 = (int)可用能力.传送泡泡;
         }
@@ -84,9 +84,8 @@ public class AbilityController : ViewController
             var localPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             localPos.z = 0;
             Transform a = Holder.BubbleNormal.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
-            if(!CheckCollision(a))
+            if (!CheckCollision(a))
             {
-                a.DestroySelf();
                 return;
             }
             a.transform.gameObject.SetActive(true);
@@ -103,7 +102,6 @@ public class AbilityController : ViewController
             Transform a = Holder.BubbleFixed.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
             if (!CheckCollision(a))
             {
-                Destroy(a.gameObject);
                 return;
             }
             a.transform.gameObject.SetActive(true);
@@ -121,7 +119,6 @@ public class AbilityController : ViewController
             Transform a = Holder.BubbleChat.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
             if (!CheckCollision(a))
             {
-                Destroy(a.gameObject);
                 return;
             }
             a.transform.gameObject.SetActive(true);
@@ -137,7 +134,7 @@ public class AbilityController : ViewController
 
     public void 传送泡泡()
     {
-        if(选中能力 == (int)可用能力.传送泡泡 && Input.GetMouseButtonDown(0))
+        if (选中能力 == (int)可用能力.传送泡泡 && Input.GetMouseButtonDown(0))
         {
             if (!LockSwitch)
             {
@@ -147,7 +144,6 @@ public class AbilityController : ViewController
                 Transform a = Holder.BubbleTele.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
                 if (!CheckCollision(a))
                 {
-                    Destroy(a.gameObject);
                     return;
                 }
                 tempBubbleTele = a.GetComponent<BubbleTele>();
@@ -162,7 +158,6 @@ public class AbilityController : ViewController
                 Transform a = Holder.BubbleTele.InstantiateWithParent(transform.Find("Root")).LocalPosition(localPos);
                 if (!CheckCollision(a))
                 {
-                    Destroy(a.gameObject);
                     return;
                 }
                 a.transform.gameObject.SetActive(true);
@@ -175,14 +170,23 @@ public class AbilityController : ViewController
 
     public bool CheckCollision(Transform bubble)
     {
-        AbilityController.CanPlace = true;
-        bubble.OnCollisionEnter2DEvent(e =>
+        // 获取气泡的碰撞器
+        Collider2D bubbleCollider = bubble.GetComponent<Collider2D>();
+
+        // 检查气泡是否与其他物体发生碰撞
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(bubble.position, bubbleCollider.bounds.size, 0f);
+
+        foreach (var collider in colliders)
         {
-            if (!e.transform.gameObject.CompareTag("Player"))
+            Debug.Log(collider.name);
+            // 如果碰撞到的不是玩家自身，则认为不能放置
+            if (!collider.CompareTag("Player") && collider != bubbleCollider)
             {
-                AbilityController.CanPlace = false;
+                Destroy(bubble.gameObject);
+                return false;
             }
-        });
-        return CanPlace;
+        }
+
+        return true;
     }
 }
