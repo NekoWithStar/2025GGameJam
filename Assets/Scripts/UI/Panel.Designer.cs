@@ -16,5 +16,7 @@ namespace QFramework.Example
 
 		public UnityEngine.UI.Image Image4;
 
+		public UnityEngine.UI.Text Count;
+
 	}
 }
