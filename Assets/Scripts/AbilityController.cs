@@ -13,7 +13,7 @@ public class AbilityController : ViewController
     public int 选中能力;
 
     public float 最大允许距离;
-   [SerializeField] private bool 是否在范围内;
+    [SerializeField] private bool 是否在范围内;
     private Player mPlayer;
     private Transform playerBody;
 
@@ -49,14 +49,8 @@ public class AbilityController : ViewController
 
     public void CheckDistance()
     {
-        if(Vector3.Distance(Input.mousePosition, playerBody.position) < 最大允许距离)
-        {
-            是否在范围内 = true;
-        }
-        else
-        {
-            是否在范围内 = false;
-        }
+        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        是否在范围内 = Vector3.Distance(mousePos, playerBody.position) < 最大允许距离;
     }
 
     public void 修正选中能力()
@@ -113,5 +107,5 @@ public class AbilityController : ViewController
 
             剩余可用能力次数--;
         }
-    }   
+    }
 }
