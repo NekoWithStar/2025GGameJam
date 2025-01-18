@@ -23,10 +23,10 @@ public class InputManager : MonoBehaviour
 
     #region 能力选择
     private InputAction _chooseAction;
-
+    #endregion
 
     private bool switchKey;
-    #endregion
+    public Texture2D cursorTexture;
 
     private void Awake()
     {
@@ -40,6 +40,10 @@ public class InputManager : MonoBehaviour
         #endregion
     }
 
+    private void Start()
+    {
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+    }
     void Update()
     {
         #region 2D平台移动
