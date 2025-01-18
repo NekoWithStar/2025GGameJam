@@ -22,6 +22,9 @@ public class InputManager : MonoBehaviour
 
     #region 能力选择
     private InputAction _chooseAction;
+
+
+    private bool switchKey;
     #endregion
 
     private void Awake()
@@ -86,8 +89,12 @@ public class InputManager : MonoBehaviour
             Time.timeScale = 1;
             IsPaused = false;
         }
-        #region 
+        #region Debug选关
         if(Input.GetKeyDown(KeyCode.M))
+        {
+            switchKey = !switchKey;
+        }
+        if (switchKey)
         {
             if (GUILayout.Button("Level 1")) LevelKit.LoadLevel(1);
             if (GUILayout.Button("Level 2")) LevelKit.LoadLevel(2);
