@@ -61,7 +61,7 @@ public class InputManager : MonoBehaviour
 
         if(Input.GetKeyUp(KeyCode.R))
         {
-            LevelKit.LoadLevel(LevelKit.CurrentLevel);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         }
     }
     #endregion

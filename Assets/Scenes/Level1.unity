@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 332803261}
   - component: {fileID: 332803260}
   - component: {fileID: 332803262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,11 +1010,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 732859902349105835, guid: 896ded0aba137434bad792693a3f4f99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.17
+      value: -12.249
       objectReference: {fileID: 0}
     - target: {fileID: 732859902349105835, guid: 896ded0aba137434bad792693a3f4f99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.142
       objectReference: {fileID: 0}
     - target: {fileID: 732859902349105835, guid: 896ded0aba137434bad792693a3f4f99, type: 3}
       propertyPath: m_LocalPosition.z
