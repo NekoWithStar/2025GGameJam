@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  Ability: {fileID: 0}
+  cursorTexture: {fileID: 2800000, guid: 33901622a358bc344bdbfff862b08e34, type: 3}
 --- !u!114 &6704683025123296770
 MonoBehaviour:
   m_ObjectHideFlags: 0
