@@ -28,6 +28,11 @@ namespace QFramework.Example
             {
                 Circle.color = 不可创建;
             }
+
+            if(InputManager.IsPaused)
+            {
+                Circle.color = Color.clear;
+            }
         }
 
         private void OnDrawGizmos()

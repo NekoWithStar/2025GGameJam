@@ -42,7 +42,7 @@ public class InputManager : MonoBehaviour
 
     private void Start()
     {
-        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(cursorTexture, new Vector2(0f,3f), CursorMode.Auto);
     }
     void Update()
     {
@@ -111,6 +111,20 @@ public class InputManager : MonoBehaviour
             {
                 if (GUILayout.Button("Level " + i.ToString())) LevelKit.LoadLevel(i);
             }
+        }
+        if(IsPaused)
+        {
+            float buttonWidth = 200f;
+            float buttonHeight = 50f;
+            float x = (Screen.width - buttonWidth) / 2;
+            float y = (Screen.height - buttonHeight) / 2;
+
+            GUILayout.BeginArea(new Rect(x, y, buttonWidth, buttonHeight));
+            if (GUILayout.Button("QUIT GAME"))
+            {
+                Application.Quit();
+            }
+            GUILayout.EndArea();
         }
     }
 
