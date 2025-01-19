@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 8395560462021986706}
   - component: {fileID: 7300511543557966181}
   - component: {fileID: 328578971906293736}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: BubbleTele
   m_TagString: Bubble
   m_Icon: {fileID: 0}
