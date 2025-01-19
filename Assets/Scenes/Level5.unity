@@ -2777,11 +2777,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 340136321289537175, guid: e4df718e6bb6a5b4797bd457fdb9c753, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.69
+      value: 17.66
       objectReference: {fileID: 0}
     - target: {fileID: 340136321289537175, guid: e4df718e6bb6a5b4797bd457fdb9c753, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 2522072034046678066, guid: e4df718e6bb6a5b4797bd457fdb9c753, type: 3}
       propertyPath: m_Color.b
@@ -17401,29 +17401,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1963020909445375997, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 2387580988409794455, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2563644427162331654, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Mass
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5631443992384816840, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160216734311855862, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8677249056619144114, guid: 7b0f9cc4461b43c488c37ce8061881a7, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
