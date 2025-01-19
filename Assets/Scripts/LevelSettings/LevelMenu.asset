@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3fca48ddbedbc418b947da25fcdf16, type: 3}
   m_Name: LevelMenu
   m_EditorClassIdentifier: 
-  "\u5173\u5361\u540D\u79F0": "\u6D4B\u8BD5\u533A\u57DF"
+  "\u5173\u5361\u540D\u79F0": Menu
   "\u5173\u5361\u5E8F\u53F7": -2
   "\u603B\u53EF\u7528\u80FD\u529B\u6B21\u6570": 1000
   "\u53EF\u7528\u80FD\u529B\u5217\u8868": 
-  "BGM\u540D\u79F0": BGM4
+  "BGM\u540D\u79F0": Game4

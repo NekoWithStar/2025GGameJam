@@ -1,6 +1,4 @@
 using UnityEngine;
-using QFramework;
-using static UnityEditor.PlayerSettings;
 
 namespace QFramework.Example
 {
@@ -29,6 +27,11 @@ namespace QFramework.Example
             else
             {
                 Circle.color = 不可创建;
+            }
+
+            if(InputManager.IsPaused)
+            {
+                Circle.color = Color.clear;
             }
         }
 

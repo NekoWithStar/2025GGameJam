@@ -42,7 +42,7 @@ public class InputManager : MonoBehaviour
 
     private void Start()
     {
-        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(cursorTexture, new Vector2(0f,3f), CursorMode.Auto);
     }
     void Update()
     {
@@ -107,11 +107,24 @@ public class InputManager : MonoBehaviour
         if (switchKey)
         {
             IMGUIHelper.SetDesignResolution(320, 80);
-            if (GUILayout.Button("Level 1")) LevelKit.LoadLevel(1);
-            if (GUILayout.Button("Level 2")) LevelKit.LoadLevel(2);
-            if (GUILayout.Button("Level 3")) LevelKit.LoadLevel(3);
-            if (GUILayout.Button("Level 4")) LevelKit.LoadLevel(4);
-            if (GUILayout.Button("Level 5")) LevelKit.LoadLevel(5);
+            for (int i = 1; i <= 6; i++)
+            {
+                if (GUILayout.Button("Level " + i.ToString())) LevelKit.LoadLevel(i);
+            }
+        }
+        if(IsPaused)
+        {
+            float buttonWidth = 200f;
+            float buttonHeight = 50f;
+            float x = (Screen.width - buttonWidth) / 2;
+            float y = (Screen.height - buttonHeight) / 2;
+
+            GUILayout.BeginArea(new Rect(x, y, buttonWidth, buttonHeight));
+            if (GUILayout.Button("QUIT GAME"))
+            {
+                Application.Quit();
+            }
+            GUILayout.EndArea();
         }
     }
 
